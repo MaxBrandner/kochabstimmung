@@ -1384,5 +1384,734 @@
       }
     ],
     "kueche": "Deftig"
+  },
+  {
+    "id": "2242791359314059",
+    "titel": "Veganes Kichererbsen-Curry mit Spinat und Möhren",
+    "untertitel": "",
+    "bewertung": 4.59,
+    "stimmen": 115,
+    "portionen": 2,
+    "zeitGesamt": 35,
+    "zeitVorbereitung": 20,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2242791359314059/bilder/792132/crop-960x640/veganes-kichererbsen-curry-mit-spinat-und-moehren.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2242791359314059/Veganes-Kichererbsen-Curry-mit-Spinat-und-Moehren.html",
+    "zutaten": [
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Spinat"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 30.0,
+        "einheit": "g",
+        "name": "Ingwer"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Möhre(n)"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Pflanzenöl"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL, gehäuft",
+        "name": "Currypulver"
+      },
+      {
+        "menge": 400.0,
+        "einheit": "ml",
+        "name": "Kokosmilch"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "ml",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Kichererbsen"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Limette(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Röstzwiebeln"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Chilischote(n)"
+      }
+    ],
+    "kueche": "Indisch"
+  },
+  {
+    "id": "2316731369346665",
+    "titel": "Grüne Bohnen mit Kartoffeln",
+    "untertitel": "veganes Pfannengericht",
+    "bewertung": 4.54,
+    "stimmen": 101,
+    "portionen": 3,
+    "zeitGesamt": 45,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2316731369346665/bilder/1210869/crop-960x640/gruene-bohnen-mit-kartoffeln.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2316731369346665/Gruene-Bohnen-mit-Kartoffeln.html",
+    "zutaten": [
+      {
+        "menge": 500.0,
+        "einheit": "g",
+        "name": "Bohnen"
+      },
+      {
+        "menge": 5.0,
+        "einheit": "m.-große",
+        "name": "Kartoffel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "große",
+        "name": "Gemüsezwiebel(n)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 450.0,
+        "einheit": "ml",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Harissa"
+      }
+    ],
+    "kueche": "Deftig"
+  },
+  {
+    "id": "2378051377072321",
+    "titel": "Vollkorn-Semmelknödel mit Champignon-Sahnesoße",
+    "untertitel": "vegan",
+    "bewertung": 4.42,
+    "stimmen": 33,
+    "portionen": 2,
+    "zeitGesamt": 55,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2378051377072321/bilder/956750/crop-960x640/vollkorn-semmelknoedel-mit-champignon-sahnesosse.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2378051377072321/Vollkorn-Semmelknoedel-mit-Champignon-Sahnesosse.html",
+    "zutaten": [
+      {
+        "menge": 300.0,
+        "einheit": "g",
+        "name": "Vollkornbrötchen"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Margarine"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Sojamehl"
+      },
+      {
+        "menge": 250.0,
+        "einheit": "ml",
+        "name": "Sojamilch (Sojadrink)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Meersalz"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Petersilie"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Muskatnuss, frisch geriebene"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Pfeffer"
+      },
+      {
+        "menge": 7.0,
+        "einheit": "m.-große",
+        "name": "Champignons, braune"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Becher",
+        "name": "Sojasahne (Sojacreme Cuisine)"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Tasse",
+        "name": "Wasser"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Würfel",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Margarine"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Petersilie"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Muskatnuss, frisch geriebene"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Pfeffer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "evtl.",
+        "name": "Saucenbinder"
+      }
+    ],
+    "kueche": "Deftig"
+  },
+  {
+    "id": "3267061485606231",
+    "titel": "One-Pot-Pasta Napoli",
+    "untertitel": "lecker und einfach",
+    "bewertung": 4.38,
+    "stimmen": 66,
+    "portionen": 2,
+    "zeitGesamt": 25,
+    "zeitVorbereitung": 5,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3267061485606231/bilder/1121749/crop-960x640/one-pot-pasta-napoli.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3267061485606231/One-Pot-Pasta-Napoli.html",
+    "zutaten": [
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Nudeln"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Tomaten, stückige"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Balsamico"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Kräuter, italienische"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Basilikum"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "3400261506352305",
+    "titel": "Veganer Kartoffel-Blumenkohl-Auflauf mit Hackfleisch-Ersatz",
+    "untertitel": "mit selbstgemachtem Käseschmelz",
+    "bewertung": 4.51,
+    "stimmen": 39,
+    "portionen": 3,
+    "zeitGesamt": 60,
+    "zeitVorbereitung": 20,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3400261506352305/bilder/1055195/crop-960x640/veganer-kartoffel-blumenkohl-auflauf-mit-hackfleisch-ersatz.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3400261506352305/Veganer-Kartoffel-Blumenkohl-Auflauf-mit-Hackfleisch-Ersatz.html",
+    "zutaten": [
+      {
+        "menge": 5.0,
+        "einheit": "m.-große",
+        "name": "Kartoffel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Blumenkohl"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Räuchertofu"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Ahornsirup"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Flüssigrauch"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Knoblauchpulver"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Pfeffer"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "ml",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "ml",
+        "name": "Sojamilch (Sojadrink)"
+      },
+      {
+        "menge": 6.0,
+        "einheit": "EL",
+        "name": "Mehl"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "EL",
+        "name": "Margarine"
+      },
+      {
+        "menge": 8.0,
+        "einheit": "EL",
+        "name": "Hefeflocken"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "Senf"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      }
+    ],
+    "kueche": "Auflauf"
+  },
+  {
+    "id": "3471871517214897",
+    "titel": "Gemüse-Avocado-Wrap",
+    "untertitel": "vegan",
+    "bewertung": 4.47,
+    "stimmen": 74,
+    "portionen": 6,
+    "zeitGesamt": 20,
+    "zeitVorbereitung": 15,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3471871517214897/bilder/1089526/crop-960x640/gemuese-avocado-wrap.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3471871517214897/Gemuese-Avocado-Wrap.html",
+    "zutaten": [
+      {
+        "menge": 6.0,
+        "einheit": "",
+        "name": "Wrap(s)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Kichererbsen"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Paprikaschote(n), rote"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Kirschtomate(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n), rote"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Öl zum Braten"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Currypulver"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "",
+        "name": "Bio-Limette(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Avocado(s)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Koriander"
+      }
+    ],
+    "kueche": "Tex-Mex"
+  },
+  {
+    "id": "3735491566893477",
+    "titel": "Rote Linsen-Bolognese",
+    "untertitel": "",
+    "bewertung": 4.78,
+    "stimmen": 223,
+    "portionen": 4,
+    "zeitGesamt": 55,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3735491566893477/bilder/1454034/crop-960x640/rote-linsen-bolognese.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3735491566893477/Rote-Linsen-Bolognese.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "Zehe/n",
+        "name": "Knoblauch"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Tomaten, stückige"
+      },
+      {
+        "menge": 450.0,
+        "einheit": "ml",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Linsen, rote"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Karotte(n)"
+      },
+      {
+        "menge": 500.0,
+        "einheit": "g",
+        "name": "Nudeln"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "EL",
+        "name": "Kräuter"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "852081190699690",
+    "titel": "Veganer Gemüse-Tofu-Auflauf",
+    "untertitel": "würzig-deftig, auch geeignet für Rohgemüse-Resteverwertung",
+    "bewertung": 4.47,
+    "stimmen": 47,
+    "portionen": 1,
+    "zeitGesamt": 90,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/852081190699690/bilder/1124622/crop-960x640/veganer-gemuese-tofu-auflauf.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/852081190699690/Veganer-Gemuese-Tofu-Auflauf.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Kokosfett"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kleine",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "große",
+        "name": "Kartoffel(n)"
+      },
+      {
+        "menge": 300.0,
+        "einheit": "g",
+        "name": "Brokkoli"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "große",
+        "name": "Fleischtomate(n)"
+      },
+      {
+        "menge": 250.0,
+        "einheit": "ml",
+        "name": "Sojamilch (Sojadrink)"
+      },
+      {
+        "menge": 20.0,
+        "einheit": "g",
+        "name": "Weizenmehl Type 550"
+      },
+      {
+        "menge": 30.0,
+        "einheit": "g",
+        "name": "Margarine"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Senf, mittelscharfer"
+      },
+      {
+        "menge": 50.0,
+        "einheit": "g",
+        "name": "Räuchertofu"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Muskatblüte"
+      },
+      {
+        "menge": 30.0,
+        "einheit": "g",
+        "name": "Hefeflocken"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer, weißer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Currypulver"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "evtl.",
+        "name": "Chilisauce"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Pflanzenfett"
+      }
+    ],
+    "kueche": "Auflauf"
+  },
+  {
+    "id": "938121199463539",
+    "titel": "Gnocchi-Salat",
+    "untertitel": "",
+    "bewertung": 4.49,
+    "stimmen": 338,
+    "portionen": 2,
+    "zeitGesamt": 20,
+    "zeitVorbereitung": 15,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/938121199463539/bilder/940377/crop-960x640/gnocchi-salat.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/938121199463539/Gnocchi-Salat.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "Pck.",
+        "name": "Gnocchi"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kleine",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Paprikaschote(n), rote"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Pfeffer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Weißweinessig"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 1.5,
+        "einheit": "EL",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 10.0,
+        "einheit": "",
+        "name": "Basilikumblätter"
+      }
+    ],
+    "kueche": "Italienisch"
   }
 ]

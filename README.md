@@ -1,6 +1,6 @@
 # 🥕 Was kochen wir heute?
 
-Eine kleine Abstimmungsseite für unsere Kochrunde. 16 vegane Hauptgerichte,
+Eine kleine Abstimmungsseite für unsere Kochrunde. 25 vegane Hauptgerichte,
 jeder kreuzt an was ihm schmeckt, ein Favorit zählt doppelt — und am Ende
 gibt es die Einkaufsliste passend auf eure Personenzahl umgerechnet.
 
@@ -110,7 +110,7 @@ Falls die Seite nicht erreichbar ist:
 | `style.css` | Gestaltung, hell und dunkel |
 | `app.js` | Abstimmung, Live-Anzeige, Mengenumrechnung |
 | `firebase-config.js` | **Hier trägst du deine Firebase-Werte ein** |
-| `rezepte.json` | Die 16 Gerichte mit Zutaten, Bewertung und Bildlink |
+| `rezepte.json` | Die 25 Gerichte mit Zutaten, Bewertung und Bildlink |
 
 ### Rezepte austauschen
 
@@ -143,6 +143,12 @@ Die Bilder werden direkt von dort geladen und nicht kopiert. Jede Karte verlinkt
 auf das Originalrezept mit der vollständigen Zubereitung — die Anleitungstexte
 selbst stehen bewusst nicht in diesem Repo.
 
-Jedes der 16 Gerichte wurde geprüft: von Chefkoch als **vegan** und als
-**Hauptspeise** ausgezeichnet, und die Zutatenliste zusätzlich einzeln auf
-tierische Bestandteile durchgesehen.
+Jedes der 25 Gerichte ist bei Chefkoch als **vegan** ausgezeichnet, und jede
+Zutatenliste wurde zusätzlich einzeln auf tierische Bestandteile durchgesehen —
+mit Ausnahmen für pflanzliche Ersatzprodukte wie Kokosmilch, Hafersahne oder
+Käseersatz. Dabei sind unter anderem Rezepte mit Sauerrahm, Feta, Crème fraîche
+und Worcestersauce aussortiert worden.
+
+24 der 25 tragen bei Chefkoch außerdem die Kennzeichnung **Hauptspeise**. Die
+Ausnahme ist der *Gnocchi-Salat*, der dort unter Salate läuft — mit angebratenen
+Gnocchi, Zucchini und Paprika ist er als Hauptgericht trotzdem gut geeignet.
