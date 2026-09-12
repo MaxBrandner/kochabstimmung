@@ -10,11 +10,12 @@
    ======================================================================= */
 
 export const firebaseConfig = {
-  apiKey:            "HIER_DEIN_API_KEY",
-  authDomain:        "HIER_DEIN_PROJEKT.firebaseapp.com",
-  databaseURL:       "https://HIER_DEIN_PROJEKT-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId:         "HIER_DEIN_PROJEKT",
-  storageBucket:     "HIER_DEIN_PROJEKT.appspot.com",
-  messagingSenderId: "HIER_DEINE_SENDER_ID",
-  appId:             "HIER_DEINE_APP_ID"
+  apiKey: "AIzaSyAGTssuORbLrrn2eAfkRTLdMnssmZN0vVE",
+  authDomain: "kochabstimmung.firebaseapp.com",
+  databaseURL: "https://kochabstimmung-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "kochabstimmung",
+  storageBucket: "kochabstimmung.firebasestorage.app",
+  messagingSenderId: "695621832195",
+  appId: "1:695621832195:web:0e989417db1b1155ff0836"
 };
+
