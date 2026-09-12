@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Was kochen wir heute?</title>
+<meta name="description" content="Schnelle Abstimmung über vegane Gerichte – für unsere Kochrunde.">
+<meta name="theme-color" content="#1b4332">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥕</text></svg>">
+<link rel="preconnect" href="https://img.chefkoch-cdn.de">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="kopf">
+  <div class="kopf-inner">
+    <div class="kopf-text">
+      <p class="kopf-datum" id="kopfDatum"></p>
+      <h1>Was kochen wir heute?</h1>
+      <p class="kopf-sub">16 vegane Gerichte. Kreuz an, was dir schmeckt – ein Favorit zählt doppelt.</p>
+    </div>
+    <div class="kopf-status">
+      <span class="modus" id="modusChip">…</span>
+      <button class="btn btn-ghost" id="btnLink" type="button">Link teilen</button>
+    </div>
+  </div>
+</header>
+
+<div class="hinweis" id="hinweisLokal" hidden>
+  <strong>Einzelmodus.</strong> Firebase ist noch nicht eingetragen – deine Stimmen bleiben nur auf diesem Gerät.
+  Wie du das in 5 Minuten änderst, steht in der <a href="https://github.com/" id="readmeLink" target="_blank" rel="noopener">README</a>.
+</div>
+
+<main class="wrap">
+
+  <section class="panel panel-name" id="panelName">
+    <label for="eingabeName">Wer stimmt gerade ab?</label>
+    <div class="namenszeile">
+      <input type="text" id="eingabeName" placeholder="Dein Vorname" autocomplete="given-name" maxlength="24" spellcheck="false">
+      <button class="btn btn-primary" id="btnName" type="button">Los geht's</button>
+    </div>
+    <p class="mini">Der Name ist nur da, damit ihr seht, wer schon abgestimmt hat.</p>
+  </section>
+
+  <section class="leiste" id="leiste" hidden>
+    <div class="leiste-teil">
+      <span class="leiste-label">Angemeldet als</span>
+      <strong id="anzeigeName">–</strong>
+      <button class="btn btn-mini" id="btnNameWechseln" type="button">wechseln</button>
+    </div>
+    <div class="leiste-teil">
+      <span class="leiste-label">Wir sind</span>
+      <div class="stepper">
+        <button class="btn btn-step" id="personenMinus" type="button" aria-label="weniger Personen">−</button>
+        <span id="personenZahl">5</span>
+        <button class="btn btn-step" id="personenPlus" type="button" aria-label="mehr Personen">+</button>
+      </div>
+      <span class="leiste-label">Personen</span>
+    </div>
+    <div class="leiste-teil leiste-filter">
+      <span class="leiste-label">Küche</span>
+      <div class="chips" id="filterChips"></div>
+    </div>
+  </section>
+
+  <section class="karten" id="karten" aria-live="polite"></section>
+
+  <section class="ergebnis" id="ergebnisBlock">
+    <div class="ergebnis-kopf">
+      <h2>Zwischenstand</h2>
+      <p class="mini" id="ergebnisMeta">Noch keine Stimmen.</p>
+    </div>
+    <ol class="balken" id="balken"></ol>
+    <div class="gewinner" id="gewinner" hidden>
+      <h3>Vorne liegt: <span id="gewinnerName"></span></h3>
+      <button class="btn btn-primary" id="btnEinkauf" type="button">Einkaufsliste für <span id="einkaufPersonen">5</span> Personen kopieren</button>
+      <span class="kopiert" id="kopiertHinweis" hidden>kopiert ✓</span>
+    </div>
+  </section>
+
+  <footer class="fuss">
+    <p>Rezepte, Bewertungen und Fotos stammen von <a href="https://www.chefkoch.de" target="_blank" rel="noopener">Chefkoch.de</a>.
+    Jede Karte verlinkt auf das Originalrezept mit der vollständigen Zubereitung.</p>
+    <p class="mini">Private Kochrunde · <span id="raumAnzeige"></span></p>
+  </footer>
+</main>
+
+<div class="fussleiste" id="fussleiste" hidden>
+  <div class="fussleiste-inner">
+    <span id="fussStatus">0 ausgewählt</span>
+    <button class="btn btn-primary" id="btnZuErgebnis" type="button">Zwischenstand ansehen</button>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

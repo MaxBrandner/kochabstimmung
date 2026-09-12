@@ -1,0 +1,1388 @@
+[
+  {
+    "id": "3572661536321652",
+    "titel": "Würzige vegane Thai-Nudeln",
+    "untertitel": "sehr aromatisch und fix zubereitet",
+    "bewertung": 4.89,
+    "stimmen": 44,
+    "portionen": 2,
+    "zeitGesamt": 20,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3572661536321652/bilder/1437328/crop-960x640/wuerzige-vegane-thai-nudeln.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3572661536321652/Wuerzige-vegane-Thai-Nudeln.html",
+    "zutaten": [
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Udon-Nudeln"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Frühlingszwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Karotte(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Koriander"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Erdnüsse"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Sesam"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Sesamöl"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Agavendicksaft"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Sriracha-Sauce"
+      }
+    ],
+    "kueche": "Thai"
+  },
+  {
+    "id": "4170281667237207",
+    "titel": "Indisches rotes Linsen Dal",
+    "untertitel": "",
+    "bewertung": 4.81,
+    "stimmen": 59,
+    "portionen": 4,
+    "zeitGesamt": 30,
+    "zeitVorbereitung": 15,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/4170281667237207/bilder/1480501/crop-960x640/indisches-rotes-linsen-dal.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/4170281667237207/Indisches-rotes-Linsen-Dal.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Kokosöl"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "Ingwer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Kurkuma"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Kreuzkümmelpulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Paprikapulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Currypulver"
+      },
+      {
+        "menge": 300.0,
+        "einheit": "g",
+        "name": "Linsen, rote"
+      },
+      {
+        "menge": 800.0,
+        "einheit": "ml",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 250.0,
+        "einheit": "ml",
+        "name": "Kokosmilch"
+      },
+      {
+        "menge": 250.0,
+        "einheit": "ml",
+        "name": "Tomaten, passierte"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Salz und Pfeffer"
+      }
+    ],
+    "kueche": "Indisch"
+  },
+  {
+    "id": "2864421438631657",
+    "titel": "Das weltbeste vegane Süßkartoffel-Curry",
+    "untertitel": "",
+    "bewertung": 4.75,
+    "stimmen": 244,
+    "portionen": 4,
+    "zeitGesamt": 55,
+    "zeitVorbereitung": 25,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2864421438631657/bilder/1170662/crop-960x640/das-weltbeste-vegane-suesskartoffel-curry.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2864421438631657/Das-weltbeste-vegane-Suesskartoffel-Curry.html",
+    "zutaten": [
+      {
+        "menge": 300.0,
+        "einheit": "g",
+        "name": "Süßkartoffel(n)"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Hokkaidokürbis(se)"
+      },
+      {
+        "menge": 500.0,
+        "einheit": "ml",
+        "name": "Kokosmilch"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "m.-große",
+        "name": "Zwiebel(n), rote"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "große",
+        "name": "Paprikaschote(n), rote"
+      },
+      {
+        "menge": 80.0,
+        "einheit": "g",
+        "name": "Cherrytomate(n)"
+      },
+      {
+        "menge": 80.0,
+        "einheit": "g",
+        "name": "Zuckerschote(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL, gehäuft",
+        "name": "Ingwerwurzel"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL, gehäuft",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL, gehäuft",
+        "name": "Currypaste"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Currypulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Basilikum"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Minze"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "m.-große",
+        "name": "Limette(n), Saft davon"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Cashewkerne"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Kokosöl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      }
+    ],
+    "kueche": "Indisch"
+  },
+  {
+    "id": "3990771612226647",
+    "titel": "Veganes Gulasch \"All Seasons\"",
+    "untertitel": "",
+    "bewertung": 4.76,
+    "stimmen": 34,
+    "portionen": 4,
+    "zeitGesamt": 55,
+    "zeitVorbereitung": 20,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3990771612226647/bilder/1495944/crop-960x640/veganes-gulasch-all-seasons.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3990771612226647/Veganes-Gulasch-All-Seasons.html",
+    "zutaten": [
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Sojawürfel"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Knoblauch"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Paprikaschote(n), bunte"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Champignons"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "TL",
+        "name": "Öl"
+      },
+      {
+        "menge": 500.0,
+        "einheit": "g",
+        "name": "Tomaten, passierte"
+      },
+      {
+        "menge": 50.0,
+        "einheit": "g",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 550.0,
+        "einheit": "g",
+        "name": "Wasser"
+      },
+      {
+        "menge": 100.0,
+        "einheit": "g",
+        "name": "Rotwein, trockener"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Würfel",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 55.0,
+        "einheit": "g",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Paprikapulver, edelsüßes"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Pfeffer, schwarzer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL, gehäuft",
+        "name": "Majoran"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Kakaopulver, ungesüßtes"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Bund",
+        "name": "Petersilie"
+      }
+    ],
+    "kueche": "Deftig"
+  },
+  {
+    "id": "1639971271583788",
+    "titel": "Ratatouille",
+    "untertitel": "Einfach und klassisch: beliebtes Gemüsegericht aus der Provence ",
+    "bewertung": 4.72,
+    "stimmen": 844,
+    "portionen": 4,
+    "zeitGesamt": 65,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/1639971271583788/bilder/1622431/crop-960x640/ratatouille.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/1639971271583788/Ratatouille.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "m.-große",
+        "name": "Aubergine(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "m.-große",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "große",
+        "name": "Paprikaschote(n), rote"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "große",
+        "name": "Paprikaschote(n), gelbe"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "große",
+        "name": "Gemüsezwiebel(n)"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Rosmarin"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Thymian"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Salbei"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Lavendelblüten"
+      },
+      {
+        "menge": 100.0,
+        "einheit": "ml",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Tube/n",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Meersalz"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Pfeffer, schwarzer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "gr. Dose/n",
+        "name": "Tomaten, geschälte"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL, gehäuft",
+        "name": "Zucker"
+      }
+    ],
+    "kueche": "Französisch"
+  },
+  {
+    "id": "4389671756190420",
+    "titel": "Teriyaki-Udon-Bowl mit Pak Choi und Tofu",
+    "untertitel": "Mit Crispy Chiliöl",
+    "bewertung": 4.68,
+    "stimmen": 255,
+    "portionen": 2,
+    "zeitGesamt": 25,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/4389671756190420/bilder/1602747/crop-960x640/teriyaki-udon-bowl-mit-pak-choi-und-tofu.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/4389671756190420/Teriyaki-Udon-Bowl-mit-Pak-Choi-und-Tofu.html",
+    "zutaten": [
+      {
+        "menge": 10.0,
+        "einheit": "g",
+        "name": "Ingwer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "",
+        "name": "Baby-Pak Choi"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Räuchertofu"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Sesamöl"
+      },
+      {
+        "menge": 100.0,
+        "einheit": "ml",
+        "name": "Sake"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Mirin"
+      },
+      {
+        "menge": 6.0,
+        "einheit": "EL",
+        "name": "Teriyakisauce"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Limettensaft"
+      },
+      {
+        "menge": 300.0,
+        "einheit": "g",
+        "name": "Udon-Nudeln"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Sojaöl"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "Stiele",
+        "name": "Koriandergrün"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Sesam"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "Crispy Chiliöl"
+      }
+    ],
+    "kueche": "Japanisch"
+  },
+  {
+    "id": "2030591329165659",
+    "titel": "Vegetarisch-veganes Chili sin Carne \"SuperNova\"",
+    "untertitel": "mit Sojagranulat und Grünkernschrot",
+    "bewertung": 4.6,
+    "stimmen": 237,
+    "portionen": 6,
+    "zeitGesamt": 55,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2030591329165659/bilder/785279/crop-960x640/vegetarisch-veganes-chili-sin-carne-supernova.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2030591329165659/Vegetarisch-veganes-Chili-sin-Carne-SuperNova.html",
+    "zutaten": [
+      {
+        "menge": 90.0,
+        "einheit": "g",
+        "name": "Sojagranulat"
+      },
+      {
+        "menge": 100.0,
+        "einheit": "g",
+        "name": "Grünkernschrot"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Liter",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Öl zum Braten"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Paprikaschote(n), rote"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "m.-große",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "große",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kl. Dose/n",
+        "name": "Tomaten, geschälte"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "kl. Dose/n",
+        "name": "Kidneybohnen"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kl. Dose/n",
+        "name": "Mais"
+      },
+      {
+        "menge": 5.0,
+        "einheit": "kleine",
+        "name": "Chilischote(n), rote"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Pck.",
+        "name": "Tomaten, passierte"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Meersalz"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Pfeffer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Cayennepfeffer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Paprikapulver, rosenscharfes"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Zucker"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Salz"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Basilikum"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Chilipulver"
+      }
+    ],
+    "kueche": "Tex-Mex"
+  },
+  {
+    "id": "2351581373917567",
+    "titel": "Veganes Zitronen-Fenchel-Risotto",
+    "untertitel": "mit Basilikum und Kapern",
+    "bewertung": 4.6,
+    "stimmen": 175,
+    "portionen": 4,
+    "zeitGesamt": 35,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2351581373917567/bilder/729994/crop-960x640/veganes-zitronen-fenchel-risotto.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2351581373917567/Veganes-Zitronen-Fenchel-Risotto.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "große",
+        "name": "Fenchelknolle(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Risottoreis"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "ml",
+        "name": "Weißwein"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 0.7,
+        "einheit": "Liter",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Kapern"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL, gehäuft",
+        "name": "Mandelmus"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Hefeflocken"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Bio-Zitrone(n), Saft und abgeriebene Schale"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Basilikum"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "3413731508675336",
+    "titel": "Vegane Burgerpatties",
+    "untertitel": "Aus Bohnen, schnell und einfach",
+    "bewertung": 4.59,
+    "stimmen": 29,
+    "portionen": 3,
+    "zeitGesamt": 20,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3413731508675336/bilder/1311979/crop-960x640/vegane-burgerpatties.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3413731508675336/Vegane-Burgerpatties.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "Tasse",
+        "name": "Haferflocken"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kl. Dose/n",
+        "name": "Kidneybohnen"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "BBQ-Sauce"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Wasser"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Öl zum Braten"
+      }
+    ],
+    "kueche": "Burger"
+  },
+  {
+    "id": "2435321384026983",
+    "titel": "Vegane Spaghetti Carbonara",
+    "untertitel": "mit Zucchini-Spaghetti, low carb",
+    "bewertung": 4.55,
+    "stimmen": 38,
+    "portionen": 3,
+    "zeitGesamt": 30,
+    "zeitVorbereitung": 20,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2435321384026983/bilder/721125/crop-960x640/vegane-spaghetti-carbonara.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2435321384026983/Vegane-Spaghetti-Carbonara.html",
+    "zutaten": [
+      {
+        "menge": 80.0,
+        "einheit": "g",
+        "name": "Mandelmus"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Räuchertofu"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "Zehe/n",
+        "name": "Knoblauch"
+      },
+      {
+        "menge": 5.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Zitronensaft"
+      },
+      {
+        "menge": 5.0,
+        "einheit": "m.-große",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Gemüsebrühepulver"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "3841701585254313",
+    "titel": "Vegane Bolognese aus Blumenkohl",
+    "untertitel": "einfach, lecker, nachhaltig",
+    "bewertung": 4.55,
+    "stimmen": 44,
+    "portionen": 4,
+    "zeitGesamt": 15,
+    "zeitVorbereitung": 5,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3841701585254313/bilder/1548018/crop-960x640/vegane-bolognese-aus-blumenkohl.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3841701585254313/Vegane-Bolognese-aus-Blumenkohl.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Blumenkohl"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 40.0,
+        "einheit": "g",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 800.0,
+        "einheit": "g",
+        "name": "Tomaten, passierte"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "Kräuter, italienische"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "Gemüsebrühepulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Kräutersalz"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Gewürzmischung"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "2470091389084050",
+    "titel": "Schnelle vegane Falafel",
+    "untertitel": "",
+    "bewertung": 4.53,
+    "stimmen": 285,
+    "portionen": 4,
+    "zeitGesamt": 35,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2470091389084050/bilder/1447209/crop-960x640/schnelle-vegane-falafel.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2470091389084050/Schnelle-vegane-Falafel.html",
+    "zutaten": [
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Kichererbsen"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "Zehe/n",
+        "name": "Knoblauch"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Petersilie"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL, gehäuft",
+        "name": "Kreuzkümmel"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL, gehäuft",
+        "name": "Korianderpulver"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Kurkumapulver"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 9.0,
+        "einheit": "EL",
+        "name": "Mehl"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL, gestr.",
+        "name": "Backpulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Liter",
+        "name": "Öl"
+      }
+    ],
+    "kueche": "Orientalisch"
+  },
+  {
+    "id": "2657231417263331",
+    "titel": "Vegane Spinat-Cashew-Lasagne",
+    "untertitel": "",
+    "bewertung": 4.4,
+    "stimmen": 87,
+    "portionen": 4,
+    "zeitGesamt": 80,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2657231417263331/bilder/777798/crop-960x640/vegane-spinat-cashew-lasagne.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2657231417263331/Vegane-Spinat-Cashew-Lasagne.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "m.-große",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kg",
+        "name": "Blattspinat"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      },
+      {
+        "menge": 70.0,
+        "einheit": "g",
+        "name": "Cashewnüsse"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Zehe/n",
+        "name": "Knoblauch"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 0.33,
+        "einheit": "TL",
+        "name": "Muskat"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Msp.",
+        "name": "Chilipulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Pck.",
+        "name": "Sojasahne (Sojacreme Cuisine)"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Cashewnüsse"
+      },
+      {
+        "menge": 500.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Speisestärke"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Pck.",
+        "name": "Lasagneplatte(n)"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "große",
+        "name": "Tomate(n)"
+      },
+      {
+        "menge": 50.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Öl"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "1872941304423928",
+    "titel": "Vegane Pizza mit Hefeschmelz",
+    "untertitel": "Da vermisst man keinen Käse",
+    "bewertung": 4.35,
+    "stimmen": 34,
+    "portionen": 2,
+    "zeitGesamt": 60,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/1872941304423928/bilder/1013360/crop-960x640/vegane-pizza-mit-hefeschmelz.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/1872941304423928/Vegane-Pizza-mit-Hefeschmelz.html",
+    "zutaten": [
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Dinkelvollkornmehl"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Pck.",
+        "name": "Frischhefe"
+      },
+      {
+        "menge": 100.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Salz"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Zucker"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Oregano"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "EL",
+        "name": "Hefeflocken"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Margarine"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "TL",
+        "name": "Weizenmehl"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Senf"
+      },
+      {
+        "menge": 100.0,
+        "einheit": "ml",
+        "name": "Tomatensauce"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Rosmarin"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Oregano"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "",
+        "name": "Paprikaschote(n), rote"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "einige",
+        "name": "Pfefferschote(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "kleine",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "einige",
+        "name": "Kalamata-Oliven"
+      }
+    ],
+    "kueche": "Italienisch"
+  },
+  {
+    "id": "3865931588453495",
+    "titel": "Cremige vegane Erdnuss-Sesam-Ramen mit Gemüse",
+    "untertitel": "",
+    "bewertung": 4.36,
+    "stimmen": 33,
+    "portionen": 4,
+    "zeitGesamt": 30,
+    "zeitVorbereitung": 20,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3865931588453495/bilder/1301815/crop-960x640/cremige-vegane-erdnuss-sesam-ramen-mit-gemuese.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3865931588453495/Cremige-vegane-Erdnuss-Sesam-Ramen-mit-Gemuese.html",
+    "zutaten": [
+      {
+        "menge": 375.0,
+        "einheit": "g",
+        "name": "Ramen-Nudeln"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Edamame"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Möhre(n)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL, gehäuft",
+        "name": "Erdnussbutter"
+      },
+      {
+        "menge": 80.0,
+        "einheit": "ml",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "ml",
+        "name": "Wasser"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Sesamöl"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Zitronensaft"
+      },
+      {
+        "menge": 7.0,
+        "einheit": "EL",
+        "name": "Ahornsirup"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL, gestr.",
+        "name": "Speisestärke"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Zehe/n",
+        "name": "Knoblauch"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Pfeffer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Öl zum Braten"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Sesam"
+      }
+    ],
+    "kueche": "Japanisch"
+  },
+  {
+    "id": "2751661427199893",
+    "titel": "Mamas vegane Linsensuppe",
+    "untertitel": "",
+    "bewertung": 4.77,
+    "stimmen": 385,
+    "portionen": 3,
+    "zeitGesamt": 105,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2751661427199893/bilder/1170134/crop-960x640/mamas-vegane-linsensuppe.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2751661427199893/Mamas-vegane-Linsensuppe.html",
+    "zutaten": [
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Räuchertofu"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Möhre(n)"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "",
+        "name": "Kartoffel(n)"
+      },
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Tellerlinsen"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "viel",
+        "name": "Tomatenmark"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Wasser"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Gemüsebrühepulver"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Balsamico"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Petersilie, gehackte"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Zucker"
+      }
+    ],
+    "kueche": "Deftig"
+  }
+]
