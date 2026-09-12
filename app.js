@@ -61,14 +61,25 @@ async function speicherAufbauen() {
   };
 }
 
+/* Erst schreiben, wenn der gespeicherte Stand vom Server da ist. Sonst
+   ueberschreibt die beim Laden noch leere Auswahl die bereits abgegebene
+   Stimme -- und zwar fuer alle, weil alle denselben Datensatz sehen. */
+let ersterStandDa = false;
+let sendenAusstehend = false;
+let offeneSchreibvorgaenge = 0;
+
 function stimmeSenden() {
   if (!AB.name || !speicher) return;
-  speicher.schreiben({
+  if (!ersterStandDa) { sendenAusstehend = true; return; }
+  offeneSchreibvorgaenge++;
+  Promise.resolve(speicher.schreiben({
     name: AB.name,
     picks: Array.from(AB.picks),
     favorit: AB.favorit,
     zeit: Date.now()
-  });
+  }))
+    .catch((fehler) => console.warn('Stimme konnte nicht gespeichert werden:', fehler))
+    .finally(() => { offeneSchreibvorgaenge--; });
 }
 
 /* ===================== Mengen & Zutaten ===================== */
@@ -326,7 +337,16 @@ async function start() {
   speicher.abonnieren((daten) => {
     ALLE_STIMMEN = daten || {};
     const meine = ALLE_STIMMEN[AB.wer];
-    if (meine) {
+    if (!ersterStandDa) {
+      // Erster Stand vom Server: eigene Stimme uebernehmen, dann ist Schreiben erlaubt.
+      ersterStandDa = true;
+      if (meine) {
+        AB.picks = new Set(meine.picks || []);
+        AB.favorit = meine.favorit || null;
+      }
+      if (sendenAusstehend) { sendenAusstehend = false; stimmeSenden(); }
+    } else if (offeneSchreibvorgaenge === 0 && meine) {
+      // Spaetere Aenderungen nur uebernehmen, wenn gerade nichts von uns unterwegs ist.
       AB.picks = new Set(meine.picks || []);
       AB.favorit = meine.favorit || null;
     }
@@ -334,19 +354,20 @@ async function start() {
     ergebnisAktualisieren();
   });
 
-  if (AB.name) nameUebernehmen(AB.name);
+  // Gemerkten Namen nur wiederherstellen, nicht speichern.
+  if (AB.name) nameUebernehmen(AB.name, false);
   personenSetzen(AB.personen);
   kartenAktualisieren();
   ergebnisAktualisieren();
 }
 
-function nameUebernehmen(name) {
+function nameUebernehmen(name, senden = true) {
   AB.name = name.trim().slice(0, 24);
   localStorage.setItem('koch.name', AB.name);
   $('#anzeigeName').textContent = AB.name;
   $('#panelName').hidden = true;
   $('#leiste').hidden = false;
-  stimmeSenden();
+  if (senden) stimmeSenden();
   kartenAktualisieren();
 }
 
