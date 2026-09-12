@@ -1,5 +1,103 @@
 [
   {
+    "id": "2714121424378503",
+    "titel": "Vöner – veganer Döner",
+    "untertitel": "selbst gemacht",
+    "bewertung": 4.67,
+    "stimmen": 18,
+    "portionen": 4,
+    "zeitGesamt": 75,
+    "zeitVorbereitung": 60,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2714121424378503/bilder/779351/crop-960x640/voener.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2714121424378503/Voener.html",
+    "zutaten": [
+      {
+        "menge": 120.0,
+        "einheit": "g",
+        "name": "Sojaschnetzel"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "TL",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Gyrosgewürz"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kleiner",
+        "name": "Rotkohl"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "m.-große",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Tasse",
+        "name": "Zucker"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Essigessenz"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Liter",
+        "name": "Mineralwasser mit Kohlensäure"
+      },
+      {
+        "menge": 500.0,
+        "einheit": "g",
+        "name": "Sojajoghurt (Joghurtalternative)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "",
+        "name": "Eisbergsalat"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "",
+        "name": "Tomate(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Gurke(n)"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Fladenbrot(e)"
+      }
+    ],
+    "kueche": "Döner",
+    "neu": true,
+    "hinweis": "Am Vorabend ansetzen: Marinade, Krautsalat und Joghurtsoße ziehen über Nacht."
+  },
+  {
     "id": "3572661536321652",
     "titel": "Würzige vegane Thai-Nudeln",
     "untertitel": "sehr aromatisch und fix zubereitet",

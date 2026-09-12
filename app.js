@@ -130,7 +130,10 @@ function karteBauen(rezept, position) {
     <div class="karte-bild">
       <img src="${rezept.bild}" alt="${rezept.titel}" decoding="async"
            loading="${position < 4 ? 'eager' : 'lazy'}" referrerpolicy="no-referrer">
-      <span class="karte-kueche">${rezept.kueche}</span>
+      <div class="karte-marken">
+        <span class="karte-kueche">${rezept.kueche}</span>
+        ${rezept.neu ? '<span class="karte-neu">Neu</span>' : ''}
+      </div>
       <span class="karte-punkte" data-punkte hidden>0</span>
     </div>
     <div class="karte-body">
@@ -139,6 +142,7 @@ function karteBauen(rezept, position) {
         <span>★ <b>${rezept.bewertung.toLocaleString('de-DE')}</b> (${rezept.stimmen})</span>
         <span>⏱ <b>${zeitText(rezept.zeitGesamt)}</b></span>
       </div>
+      ${rezept.hinweis ? `<p class="karte-hinweis">${rezept.hinweis}</p>` : ''}
       <button class="zutaten-schalter" type="button" data-auf>Zutaten für <span data-pz>${AB.personen}</span> Personen anzeigen</button>
       <div class="zutaten" data-zutaten hidden></div>
       <div class="karte-aktionen">
