@@ -5,10 +5,11 @@ import { firebaseConfig } from './firebase-config.js';
 const $  = (s) => document.querySelector(s);
 const $$ = (s) => Array.from(document.querySelectorAll(s));
 
-const heute = new Date();
-const datumsSchluessel = heute.toISOString().slice(0, 10);
+/* Fixed round for the cooking on 27.10.: the existing votes live under this key,
+   so every visit counts towards it regardless of the day the link is opened. */
+const STANDARD_RAUM = '2026-09-12';
 const params = new URLSearchParams(location.search);
-const RAUM = (params.get('raum') || datumsSchluessel).replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40) || datumsSchluessel;
+const RAUM = (params.get('raum') || STANDARD_RAUM).replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40) || STANDARD_RAUM;
 
 const AB = {
   name:   localStorage.getItem('koch.name') || '',
@@ -321,7 +322,7 @@ function personenSetzen(wert) {
 /* ===================== Start ===================== */
 
 async function start() {
-  $('#kopfDatum').textContent = heute.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' });
+  $('#kopfDatum').textContent = new Date(2026, 9, 27).toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' });
   $('#raumAnzeige').textContent = `Runde ${RAUM}`;
 
   REZEPTE = await fetch('rezepte.json').then((r) => r.json());

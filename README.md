@@ -15,9 +15,8 @@ gibt es die Einkaufsliste passend auf eure Personenzahl umgerechnet.
 3. Bei genau einem Gericht auf den **Stern ★** — das ist dein Favorit und zählt doppelt.
 4. Unten im **Zwischenstand** sieht jeder live, was vorne liegt.
 
-Die Runde richtet sich nach dem Datum: Alle, die am selben Tag den Link öffnen,
-stimmen automatisch in derselben Runde ab. Morgen beginnt eine neue, ohne dass
-jemand etwas zurücksetzen muss.
+Zurzeit gibt es eine feste Runde für das Kochen am 27.10.: Alle, die den Link
+öffnen, stimmen in derselben Runde ab, egal an welchem Tag.
 
 Eine eigene Runde außer der Reihe: `?raum=irgendeinname` an den Link hängen,
 zum Beispiel `.../kochabstimmung/?raum=silvester`.
