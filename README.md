@@ -110,6 +110,7 @@ Falls die Seite nicht erreichbar ist:
 | `index.html` | Gerüst der Seite |
 | `style.css` | Gestaltung, hell und dunkel |
 | `app.js` | Abstimmung, Live-Anzeige, Mengenumrechnung |
+| `effekte.js`, `effekte.css` | Animationen bei „Schmeckt mir“ und beim Favoriten; zum Ausprobieren eine erzwingen mit `?effekt=ofen` oder `?favorit=blattgold` |
 | `firebase-config.js` | **Hier trägst du deine Firebase-Werte ein** |
 | `rezepte.json` | Die 25 Gerichte mit Zutaten, Bewertung und Bildlink |
 

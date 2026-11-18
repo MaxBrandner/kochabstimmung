@@ -1,0 +1,429 @@
+/* =======================================================================
+   Animationen – gehört zu effekte.js
+   ======================================================================= */
+
+/* ---------- Ebenen auf dem Foto ---------- */
+.karte-bild img{position:relative; z-index:1}
+.biss-rand{z-index:2}
+.biss{z-index:3}
+.karte-marken, .karte-punkte{z-index:4}
+.effekt{position:absolute; inset:0; pointer-events:none; z-index:5}
+.effekt-schnitt{overflow:hidden; border-radius:inherit}
+.effekt-hinten{z-index:0}
+@keyframes effekt-weg{to{opacity:0}}
+
+/* ---------- 1. Der Biss ---------- */
+.biss, .biss-rand{pointer-events:none}
+.biss{position:absolute; overflow:hidden}
+.biss-rand{position:absolute; inset:0; overflow:hidden; border-radius:inherit}
+.biss-lage{position:absolute}
+.biss-lage .biss-form{overflow:visible; fill:rgba(70,35,10,.5)}
+.biss .biss-form{display:block; fill:var(--creme)}
+.biss-lage .biss-form{display:block}
+.neu .biss-form{animation:biss-zu .42s cubic-bezier(.3,1.6,.5,1) both}
+.heilt .biss-form{animation:biss-heilt .5s ease-in-out both}
+.karte.beisst{animation:biss-ruck .45s ease-out}
+@keyframes biss-zu{
+  0%{transform:scale(0)}
+  45%{transform:scale(1.18)}
+  70%{transform:scale(.94)}
+  100%{transform:scale(1)}
+}
+@keyframes biss-heilt{to{transform:scale(0)}}
+@keyframes biss-ruck{
+  0%{transform:none}
+  30%{transform:translateX(var(--ruck, 4px)) rotate(.8deg)}
+  60%{transform:translateX(calc(var(--ruck, 4px) * -.5)) rotate(-.4deg)}
+  100%{transform:none}
+}
+
+/* ---------- 2. Pizza belegen ---------- */
+.effekt-pizza{animation:effekt-weg .45s calc(var(--dauer) - 500ms) forwards}
+.kaese{
+  position:absolute; inset:0; opacity:0;
+  background:
+    radial-gradient(ellipse 30% 22% at 28% 38%, rgba(255,214,102,.6), transparent 70%),
+    radial-gradient(ellipse 34% 26% at 70% 62%, rgba(255,214,102,.55), transparent 70%),
+    radial-gradient(ellipse 26% 18% at 52% 18%, rgba(255,230,150,.5), transparent 70%),
+    radial-gradient(ellipse 24% 20% at 22% 80%, rgba(255,220,120,.5), transparent 70%);
+  animation:kaese-schmilzt .9s .5s ease-out forwards;
+}
+@keyframes kaese-schmilzt{to{opacity:1}}
+.belag{
+  position:absolute; left:var(--x); top:var(--y);
+  width:calc(26px * var(--g)); height:calc(26px * var(--g)); translate:-50% -50%;
+  filter:drop-shadow(0 2px 2px rgba(0,0,0,.4));
+  animation:belag-faellt .55s var(--verz) cubic-bezier(.3,1.5,.5,1) both;
+}
+@keyframes belag-faellt{
+  from{opacity:0; transform:translateY(-160px) rotate(0) scale(1.5)}
+  to{opacity:1; transform:rotate(var(--dreh)) scale(1)}
+}
+.belag-tomate{border-radius:50%; background:radial-gradient(circle, #ff9a8b 0 16%, #e63946 18% 60%, #b5172a 64%)}
+.belag-salami{
+  border-radius:50%; width:calc(30px * var(--g)); height:calc(30px * var(--g));
+  background:
+    radial-gradient(circle at 30% 35%, #f6b0a8 0 7%, transparent 8%),
+    radial-gradient(circle at 66% 58%, #f6b0a8 0 8%, transparent 9%),
+    radial-gradient(circle at 42% 72%, #f6b0a8 0 6%, transparent 7%),
+    radial-gradient(circle, #b21e24 0 66%, #7d1015 70%);
+}
+.belag-olive{
+  border-radius:50%; width:calc(17px * var(--g)); height:calc(17px * var(--g));
+  background:radial-gradient(circle, transparent 0 30%, #1f1f1f 33% 100%);
+}
+.belag-basilikum{
+  width:calc(24px * var(--g)); height:calc(14px * var(--g)); border-radius:0 85% 0 85%;
+  background:linear-gradient(135deg, #74c69d, #2d6a4f 70%);
+}
+.belag-pilz{
+  width:calc(26px * var(--g)); height:calc(22px * var(--g));
+  border-radius:50% 50% 22% 22% / 62% 62% 38% 38%;
+  background:radial-gradient(ellipse at 50% 85%, #f4ead5 0 28%, #d9c19f 31% 100%);
+}
+
+/* ---------- 3. Ofen ---------- */
+.effekt-ofen{--ofen:#3d4245}
+.ofen-fenster{
+  position:absolute; top:0; left:0; right:0; bottom:0; border-radius:0;
+  box-shadow:0 0 0 600px var(--ofen), inset 0 0 0 3px #1c1f21;
+  animation:ofen-fenster var(--dauer) cubic-bezier(.6,0,.3,1) forwards;
+}
+@keyframes ofen-fenster{
+  0%{top:0; left:0; right:0; bottom:0; border-radius:0}
+  20%, 80%{top:34%; left:13%; right:13%; bottom:10%; border-radius:14px}
+  100%{top:0; left:0; right:0; bottom:0; border-radius:0}
+}
+.ofen-glut{
+  position:absolute; inset:0; border-radius:inherit; opacity:0;
+  background:linear-gradient(to top, rgba(255,110,0,.45), transparent 65%);
+  box-shadow:inset 0 0 28px 6px rgba(255,120,0,.8);
+  animation:ofen-glut var(--dauer) ease-in-out forwards;
+}
+@keyframes ofen-glut{
+  0%, 18%{opacity:0}
+  30%{opacity:.7} 40%{opacity:1} 50%{opacity:.75} 60%{opacity:1} 70%{opacity:.8}
+  80%{opacity:.9} 100%{opacity:0}
+}
+.ofen-glas{
+  position:absolute; inset:0; border-radius:inherit;
+  background:linear-gradient(115deg, transparent 28%, rgba(255,255,255,.28) 36%, transparent 44%, transparent 60%, rgba(255,255,255,.12) 64%, transparent 68%);
+}
+.ofen-leiste, .ofen-griff, .ofen-dampf{opacity:0; animation:ofen-teile var(--dauer) ease-in-out forwards}
+@keyframes ofen-teile{0%, 15%{opacity:0} 22%, 78%{opacity:1} 86%, 100%{opacity:0}}
+.ofen-leiste{
+  position:absolute; top:6%; left:13%; right:13%; height:16%;
+  display:flex; align-items:center; justify-content:space-evenly;
+  background:linear-gradient(#4c5256, #2e3235); border-radius:8px; box-shadow:inset 0 -2px 0 rgba(0,0,0,.35);
+}
+.ofen-knopf{
+  width:clamp(12px, 9%, 22px); aspect-ratio:1; border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, #f1f3f5, #868e96 70%);
+  box-shadow:0 1px 2px rgba(0,0,0,.5); position:relative;
+  animation:ofen-drehen var(--dauer) ease-in-out forwards;
+}
+.ofen-knopf::after{content:""; position:absolute; left:46%; top:8%; width:8%; height:38%; background:#343a40; border-radius:2px}
+@keyframes ofen-drehen{0%, 20%{transform:rotate(0)} 30%, 100%{transform:rotate(130deg)}}
+.ofen-lampe{
+  width:8px; height:8px; border-radius:50%; background:#ff6b00;
+  box-shadow:0 0 8px 2px rgba(255,107,0,.9); animation:ofen-lampe .5s ease-in-out infinite alternate;
+}
+@keyframes ofen-lampe{to{opacity:.45}}
+.ofen-griff{
+  position:absolute; top:27%; left:30%; right:30%; height:4%; min-height:4px; border-radius:99px;
+  background:linear-gradient(#f1f3f5, #868e96); box-shadow:0 2px 3px rgba(0,0,0,.4);
+}
+.ofen-dampf{position:absolute; inset:0}
+.ofen-dampf i{
+  position:absolute; top:0; width:10px; height:30%; border-radius:99px;
+  background:linear-gradient(to top, rgba(255,255,255,.55), transparent);
+  filter:blur(3px); animation:ofen-dampf 1.3s ease-out infinite;
+}
+.ofen-dampf i:nth-child(1){left:22%}
+.ofen-dampf i:nth-child(2){left:40%; animation-delay:.35s}
+.ofen-dampf i:nth-child(3){left:58%; animation-delay:.7s}
+.ofen-dampf i:nth-child(4){left:76%; animation-delay:1s}
+@keyframes ofen-dampf{
+  0%{opacity:0; transform:translateY(10%) scaleY(.5) skewX(0)}
+  30%{opacity:1}
+  100%{opacity:0; transform:translateY(-60%) scaleY(1.2) skewX(18deg)}
+}
+.ofen-ding{
+  position:absolute; top:4%; right:5%; font-weight:900; font-size:1.25rem; color:#ffd166;
+  text-shadow:0 2px 0 #7a4d00, 0 0 10px rgba(255,209,102,.8); opacity:0;
+  animation:ofen-ding var(--dauer) cubic-bezier(.3,1.8,.5,1) forwards;
+}
+@keyframes ofen-ding{
+  0%, 70%{opacity:0; transform:scale(.3) rotate(-20deg)}
+  76%{opacity:1; transform:scale(1.25) rotate(8deg)}
+  82%, 92%{opacity:1; transform:scale(1) rotate(0)}
+  100%{opacity:0; transform:scale(1)}
+}
+
+/* ---------- 4. Gabel und Messer ---------- */
+.besteck{
+  position:absolute; top:50%; left:50%; height:78%; aspect-ratio:1/5; overflow:visible;
+  filter:drop-shadow(0 3px 4px rgba(0,0,0,.45)); opacity:0;
+}
+.besteck-gabel{animation:gabel 2.1s cubic-bezier(.5,0,.3,1) forwards}
+.besteck-messer{animation:messer 2.1s cubic-bezier(.5,0,.3,1) forwards}
+@keyframes gabel{
+  0%{opacity:0; transform:translate(-50%,-50%) translateX(-260%) rotate(-80deg)}
+  35%{opacity:1; transform:translate(-50%,-50%) translateX(-22%) rotate(-26deg)}
+  42%{transform:translate(-50%,-50%) translateX(-14%) rotate(-30deg)}
+  70%{opacity:1; transform:translate(-50%,-50%) translateX(-22%) rotate(-26deg)}
+  100%{opacity:0; transform:translate(-50%,-50%) translateX(-260%) translateY(-40%) rotate(-70deg)}
+}
+@keyframes messer{
+  0%{opacity:0; transform:translate(-50%,-50%) translateX(260%) rotate(80deg)}
+  35%{opacity:1; transform:translate(-50%,-50%) translateX(22%) rotate(26deg)}
+  42%{transform:translate(-50%,-50%) translateX(14%) rotate(30deg)}
+  70%{opacity:1; transform:translate(-50%,-50%) translateX(22%) rotate(26deg)}
+  100%{opacity:0; transform:translate(-50%,-50%) translateX(260%) translateY(-40%) rotate(70deg)}
+}
+.besteck-kling{
+  position:absolute; top:24%; left:50%; translate:-50% -50%; font-size:2.4rem; color:#fff;
+  text-shadow:0 0 12px #fff, 0 0 24px var(--gold-hell); opacity:0;
+  animation:kling 2.1s ease-out forwards;
+}
+.besteck-text{
+  position:absolute; top:8%; left:50%; translate:-50% 0; font-weight:800; font-style:italic; font-size:1.05rem;
+  color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.7); opacity:0; animation:kling 2.1s ease-out forwards;
+}
+@keyframes kling{
+  0%, 36%{opacity:0; transform:scale(.2) rotate(0)}
+  44%{opacity:1; transform:scale(1.3) rotate(45deg)}
+  62%{opacity:1; transform:scale(1) rotate(90deg)}
+  75%, 100%{opacity:0; transform:scale(.6) rotate(120deg)}
+}
+
+/* ---------- 5. Salz- oder Pfefferstreuer ---------- */
+.streuer{
+  position:absolute; top:4%; right:12%; width:clamp(40px, 15%, 62px); overflow:visible;
+  filter:drop-shadow(0 3px 4px rgba(0,0,0,.45)); transform-origin:50% 40%;
+  animation:streuer 2.2s ease-in-out forwards;
+}
+.streuer-koerper{fill:rgba(255,255,255,.75); stroke:#adb5bd; stroke-width:1.2}
+.streuer-inhalt{fill:#fff}
+.streuer-pfeffer .streuer-inhalt{fill:#2b2b2b}
+.streuer-kappe{fill:#ced4da; stroke:#868e96; stroke-width:1.2}
+.streuer-pfeffer .streuer-kappe{fill:#495057; stroke:#212529}
+.streuer-loecher{fill:#343a40}
+.streuer-pfeffer .streuer-loecher{fill:#f1f3f5}
+@keyframes streuer{
+  0%{opacity:0; transform:translate(40px,-50px) rotate(90deg)}
+  14%{opacity:1; transform:translate(0,0) rotate(150deg)}
+  20%{transform:translate(-6px,8px) rotate(160deg)}
+  26%{transform:translate(4px,-6px) rotate(140deg)}
+  32%{transform:translate(-6px,8px) rotate(160deg)}
+  38%{transform:translate(4px,-6px) rotate(140deg)}
+  44%{transform:translate(-6px,8px) rotate(160deg)}
+  50%{transform:translate(4px,-6px) rotate(140deg)}
+  56%{transform:translate(-6px,8px) rotate(160deg)}
+  62%{transform:translate(4px,-6px) rotate(140deg)}
+  68%{transform:translate(0,0) rotate(150deg)}
+  85%{opacity:1; transform:translate(0,0) rotate(150deg)}
+  100%{opacity:0; transform:translate(40px,-50px) rotate(90deg)}
+}
+.prise{
+  width:var(--groesse); height:var(--groesse); margin:calc(var(--groesse) / -2) 0 0 calc(var(--groesse) / -2);
+  border-radius:50%; background:var(--farbe); box-shadow:0 0 1px rgba(0,0,0,.6); opacity:0;
+  animation:prise-faellt var(--dauer) var(--verz) cubic-bezier(.4,0,.8,.6) forwards;
+}
+@keyframes prise-faellt{
+  0%{opacity:1; transform:translate(0,0)}
+  85%{opacity:1}
+  100%{opacity:0; transform:translate(var(--dx), var(--fall))}
+}
+
+/* ---------- 6. Teller dreht sich ---------- */
+.effekt-teller{
+  background:
+    repeating-linear-gradient(0deg, rgba(200,40,50,.55) 0 14px, transparent 14px 28px),
+    repeating-linear-gradient(90deg, rgba(200,40,50,.55) 0 14px, transparent 14px 28px),
+    #fdf6ec;
+}
+.teller-scheibe{
+  position:absolute; left:50%; top:50%; width:var(--d); height:var(--d); translate:-50% -50%; border-radius:50%;
+  background:radial-gradient(circle, #fff 0 70%, #eef0f2 74%, #fff 82%, #dfe3e6 100%);
+  box-shadow:0 6px 14px rgba(0,0,0,.35);
+}
+.teller-gabel, .teller-messer{
+  position:absolute; top:50%; height:72%; aspect-ratio:1/5; overflow:visible; opacity:0;
+  filter:drop-shadow(0 3px 3px rgba(0,0,0,.35));
+  animation:teller-besteck 2.6s ease-in-out forwards;
+}
+.teller-gabel{left:calc(50% - var(--d) / 2 - 12px); translate:-100% -50%}
+.teller-messer{left:calc(50% + var(--d) / 2 + 12px); translate:0 -50%}
+@keyframes teller-besteck{
+  0%, 18%{opacity:0; transform:translateY(14px)}
+  28%, 72%{opacity:1; transform:none}
+  84%, 100%{opacity:0; transform:translateY(14px)}
+}
+.karte-bild.teller-dreht{overflow:hidden}   /* the turning photo must not stick out */
+.karte-bild.teller-dreht img{animation:teller-dreh 2.6s cubic-bezier(.6,0,.3,1) both}
+@keyframes teller-dreh{
+  0%{clip-path:circle(75% at 50% 50%); transform:rotate(0)}
+  22%{clip-path:circle(34% at 50% 50%); transform:rotate(0)}
+  78%{clip-path:circle(34% at 50% 50%); transform:rotate(360deg)}
+  100%{clip-path:circle(75% at 50% 50%); transform:rotate(360deg)}
+}
+
+/* ---------- 7. Herzen steigen auf ---------- */
+.herz{
+  position:absolute; left:var(--x); top:72%; width:var(--g); height:var(--g); translate:-50% -50%;
+  fill:var(--farbe); opacity:0; filter:drop-shadow(0 0 1.5px #fff) drop-shadow(0 2px 3px rgba(0,0,0,.35));
+  animation:herz-steigt var(--zeit) var(--verz) ease-out forwards;
+}
+.herz svg{width:100%; height:100%; display:block}
+@keyframes herz-steigt{
+  0%{opacity:0; transform:translate(0,0) scale(.3)}
+  15%{opacity:1; transform:translate(calc(var(--sx) * -.3), calc(var(--hoch) * .15)) scale(1.1)}
+  50%{transform:translate(var(--sx), calc(var(--hoch) * .55)) scale(1) rotate(8deg)}
+  100%{opacity:0; transform:translate(calc(var(--sx) * -.5), var(--hoch)) scale(.8) rotate(-10deg)}
+}
+
+/* ---------- 8. Comic-Knall ---------- */
+.comic-knall{
+  position:absolute; left:var(--x); top:var(--y); width:min(42%, 140px); aspect-ratio:1.25;
+  translate:-50% -50%; display:grid; place-items:center;
+  filter:drop-shadow(3px 0 0 #1b1b1b) drop-shadow(-3px 0 0 #1b1b1b) drop-shadow(0 3px 0 #1b1b1b) drop-shadow(0 -3px 0 #1b1b1b) drop-shadow(5px 6px 0 rgba(0,0,0,.35));
+  animation:knall 1.8s cubic-bezier(.3,1.6,.5,1) forwards;
+}
+.comic-stern{
+  position:absolute; inset:0;
+  background:radial-gradient(circle, #ef476f 0 22%, transparent 25%) 0 0 / 9px 9px, #ffd166;
+}
+.comic-wort{
+  position:relative; font:italic 900 clamp(.95rem, 4.2vw, 1.3rem)/1 Impact, "Arial Black", "Helvetica Neue", sans-serif;
+  color:#fff; letter-spacing:.02em; -webkit-text-stroke:2px #1b1b1b; paint-order:stroke fill;
+  text-shadow:3px 3px 0 #1b1b1b; transform:rotate(-6deg);
+}
+@keyframes knall{
+  0%{opacity:0; transform:scale(0) rotate(calc(var(--dreh) - 30deg))}
+  22%{opacity:1; transform:scale(1.15) rotate(var(--dreh))}
+  32%{transform:scale(1) rotate(var(--dreh))}
+  70%{opacity:1; transform:scale(1.04) rotate(var(--dreh))}
+  100%{opacity:0; transform:scale(1.5) rotate(var(--dreh))}
+}
+
+/* ---------- Favorit: Blattgold (Glanz läuft in Schleife) ---------- */
+.goldglanz{position:absolute; inset:0; border-radius:inherit; overflow:hidden; pointer-events:none; z-index:6}
+.goldglanz i{
+  position:absolute; top:0; bottom:0; left:-60%; width:60%;
+  background:linear-gradient(105deg, transparent 0, rgba(255,226,140,0) 20%, rgba(255,236,170,.7) 50%, rgba(255,226,140,0) 80%, transparent 100%);
+  mix-blend-mode:screen; animation:goldglanz 2.6s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+/* Starts and ends fully outside the card (including the slant), so the loop has no pause and no leftover. */
+@keyframes goldglanz{
+  0%{transform:translateX(-60%) skewX(-12deg)}
+  100%{transform:translateX(320%) skewX(-12deg)}
+}
+
+/* ---------- Teilchen: Krümel, Funken, +1 ---------- */
+.teilchen{position:fixed; z-index:50; pointer-events:none; will-change:transform,opacity}
+.krume{
+  width:var(--groesse); height:var(--groesse); margin:calc(var(--groesse) / -2) 0 0 calc(var(--groesse) / -2);
+  background:var(--farbe); border-radius:var(--form); opacity:0;
+  animation:krume-fliegt var(--dauer) var(--verz) cubic-bezier(.25,.6,.5,1) forwards;
+}
+@keyframes krume-fliegt{
+  0%{opacity:1; transform:translate(0,0) rotate(0)}
+  28%{opacity:1; transform:translate(calc(var(--dx) * .45), var(--hoch)) rotate(calc(var(--dreh) * .3))}
+  100%{opacity:0; transform:translate(var(--dx), var(--fall)) rotate(var(--dreh))}
+}
+.funke{
+  color:var(--farbe); font-size:var(--groesse); line-height:1; translate:-50% -50%;
+  animation:funke-fliegt 1.1s cubic-bezier(.15,.7,.3,1) forwards;
+  text-shadow:0 0 8px color-mix(in srgb, var(--farbe) 60%, transparent);
+}
+.stern-ring{
+  width:20px; height:20px; margin:-10px 0 0 -10px; border-radius:50%;
+  border:3px solid var(--gold); animation:stern-ring .7s ease-out forwards;
+}
+@keyframes stern-ring{
+  0%{opacity:.9; transform:scale(.5)}
+  100%{opacity:0; transform:scale(7); border-width:1px}
+}
+.stern-geist{
+  color:#e9c46a; font-size:30px; line-height:1; translate:-50% -50%;
+  text-shadow:0 0 14px #e9c46a; animation:stern-geist 1s cubic-bezier(.2,.8,.3,1) forwards;
+}
+@keyframes stern-geist{
+  0%{opacity:1; transform:scale(.6) rotate(0)}
+  100%{opacity:0; transform:translateY(-70px) scale(2.6) rotate(144deg)}
+}
+@keyframes funke-fliegt{
+  0%{opacity:1; transform:translate(0,0) scale(.3) rotate(0)}
+  60%{opacity:1}
+  100%{opacity:0; transform:translate(var(--dx), var(--dy)) scale(1) rotate(var(--dreh))}
+}
+.plus{
+  color:var(--terra); font-weight:800; font-size:.95rem; translate:-50% -100%;
+  text-shadow:0 1px 0 var(--papier), 0 0 6px var(--papier);
+  animation:plus-steigt 1s ease-out forwards;
+}
+@keyframes plus-steigt{
+  0%{opacity:0; transform:translateY(6px) scale(.7)}
+  20%{opacity:1; transform:translateY(0) scale(1.1)}
+  100%{opacity:0; transform:translateY(-30px) scale(1)}
+}
+.btn-fav.plopp{animation:stern-plopp .5s cubic-bezier(.3,1.8,.5,1)}
+.karte-punkte.hupf{animation:chip-hupf .45s cubic-bezier(.3,1.8,.5,1)}
+.karte.leuchtet{animation:karte-leuchtet .9s ease-out}
+@keyframes stern-plopp{
+  0%{transform:scale(1) rotate(0)}
+  40%{transform:scale(1.35) rotate(-18deg)}
+  100%{transform:scale(1) rotate(0)}
+}
+@keyframes karte-leuchtet{
+  0%{box-shadow:0 0 0 2px var(--gold), 0 0 0 0 color-mix(in srgb, var(--gold) 60%, transparent), var(--schatten)}
+  100%{box-shadow:0 0 0 2px var(--gold), 0 0 0 22px transparent, var(--schatten)}
+}
+@keyframes chip-hupf{
+  0%{transform:scale(1)}
+  40%{transform:scale(1.3)}
+  100%{transform:scale(1)}
+}
+
+/* ---------- Karten werden serviert ---------- */
+.karte.wartet{opacity:0; transform:translateY(22px) rotate(-1.2deg) scale(.98)}
+.karte.wartet.serviert{
+  opacity:1; transform:none;
+  transition:opacity .5s ease-out var(--verz), transform .65s cubic-bezier(.2,1.2,.4,1) var(--verz),
+             border-color .15s, box-shadow .15s;
+}
+
+/* ---------- Zutaten fallen in die Liste ---------- */
+.zutaten:not([hidden]){animation:zutaten-auf .25s ease-out}
+.zutaten li{animation:zutat-faellt .35s cubic-bezier(.2,1.3,.4,1) both; animation-delay:calc(var(--i) * 28ms)}
+@keyframes zutaten-auf{from{opacity:0; transform:translateY(-4px)}}
+@keyframes zutat-faellt{from{opacity:0; transform:translateY(-10px)}}
+
+/* ---------- Dampf über dem Spitzenreiter ---------- */
+.dampf-teller{position:relative; display:inline-block; width:1.5em; height:1.1em; margin-right:.45em; vertical-align:-.1em}
+.dampf-teller svg{position:absolute; left:0; bottom:0; width:100%; fill:var(--terra)}
+.dampf-teller i{
+  position:absolute; bottom:.55em; width:3px; height:.75em; border-radius:3px;
+  background:linear-gradient(to top, color-mix(in srgb, var(--text-leise) 70%, transparent), transparent);
+  opacity:0;
+}
+.dampf-teller i:nth-child(1){left:22%}
+.dampf-teller i:nth-child(2){left:46%}
+.dampf-teller i:nth-child(3){left:70%}
+.dampf-teller i{animation:dampf 2.4s ease-in-out infinite}
+.dampf-teller i:nth-child(2){animation-delay:.8s}
+.dampf-teller i:nth-child(3){animation-delay:1.6s}
+@keyframes dampf{
+  0%{opacity:0; transform:translateY(4px) scaleY(.6) skewX(0)}
+  30%{opacity:.9}
+  60%{transform:translateY(-6px) scaleY(1) skewX(14deg)}
+  100%{opacity:0; transform:translateY(-14px) scaleY(1.2) skewX(-10deg)}
+}
+
+/* ---------- Neuer Vorschlag landet ---------- */
+.vorschlag-neu{animation:vorschlag-landet .6s cubic-bezier(.2,1.4,.4,1)}
+@keyframes vorschlag-landet{
+  0%{opacity:0; transform:translateY(-18px) rotate(-2deg)}
+  100%{opacity:1; transform:none}
+}

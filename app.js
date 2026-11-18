@@ -1,4 +1,5 @@
 import { firebaseConfig } from './firebase-config.js';
+import { schmecktMir, nichtMehrLecker, bissAbgleichen, favoritFeiern, glanzAbgleichen, plusAnzeigen, kartenServieren } from './effekte.js?v=2';
 
 /* ===================== Grundwerte ===================== */
 
@@ -159,10 +160,12 @@ function karteBauen(rezept, position) {
         <span>⏱ <b>${zeitText(rezept.zeitGesamt)}</b></span>
       </div>
       ${rezept.hinweis ? `<p class="karte-hinweis">${rezept.hinweis}</p>` : ''}
-      <button class="zutaten-schalter" type="button" data-auf>Zutaten für <span data-pz>${AB.personen}</span> Personen anzeigen</button>
       <div class="zutaten" data-zutaten hidden></div>
       <div class="karte-aktionen">
         <button class="btn btn-waehlen" type="button" data-waehlen>Schmeckt mir</button>
+        <button class="btn btn-zutaten" type="button" data-auf aria-expanded="false" title="Zutaten anzeigen" aria-label="Zutaten anzeigen">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg>
+        </button>
         <button class="btn btn-fav" type="button" data-fav title="Als Favorit setzen (zählt doppelt)" aria-label="Als Favorit setzen">★</button>
       </div>
     </div>`;
@@ -174,7 +177,10 @@ function karteBauen(rezept, position) {
     const offen = !box.hidden;
     box.hidden = offen;
     if (!offen) zutatenRendern(el, rezept);
-    e.currentTarget.firstChild.textContent = offen ? 'Zutaten für ' : 'Zutaten ausblenden – für ';
+    const knopf = e.currentTarget;
+    knopf.setAttribute('aria-expanded', String(!offen));
+    knopf.title = offen ? 'Zutaten anzeigen' : 'Zutaten ausblenden';
+    knopf.setAttribute('aria-label', knopf.title);
   });
   return el;
 }
@@ -182,9 +188,17 @@ function karteBauen(rezept, position) {
 function zutatenRendern(el, rezept) {
   const liste = zutatenFuer(rezept, AB.personen);
   el.querySelector('[data-zutaten]').innerHTML = `
-    <ul>${liste.map((z) => `<li><span class="menge">${z.menge} ${z.einheit}</span><span>${z.name}</span></li>`).join('')}</ul>
+    <p class="zutaten-kopf">Zutaten für ${AB.personen} ${AB.personen === 1 ? 'Person' : 'Personen'}</p>
+    <ul>${liste.map((z, i) => `<li style="--i:${i}"><span class="menge">${z.menge} ${z.einheit}</span><span>${z.name}</span></li>`).join('')}</ul>
     <a class="quelle" href="${rezept.quelle}" target="_blank" rel="noopener">Zubereitung bei Chefkoch öffnen →</a>`;
 }
+
+/* ===================== Animationen ===================== */
+
+const LETZTE_PUNKTE = new Map();
+let BEKANNTE_VORSCHLAEGE = null;
+
+const karteVon = (id) => document.querySelector(`.karte[data-id="${CSS.escape(id)}"]`);
 
 /* ===================== Abstimmen ===================== */
 
@@ -198,11 +212,14 @@ function nameNoetig() {
 
 function waehlen(id) {
   if (nameNoetig()) return;
+  const karte = karteVon(id);
   if (AB.picks.has(id)) {
     AB.picks.delete(id);
     if (AB.favorit === id) AB.favorit = null;
+    nichtMehrLecker(karte);
   } else {
     AB.picks.add(id);
+    schmecktMir(karte);
   }
   stimmeSenden();
   kartenAktualisieren();
@@ -210,8 +227,12 @@ function waehlen(id) {
 
 function favoritSetzen(id) {
   if (nameNoetig()) return;
+  const karte = karteVon(id);
   AB.favorit = (AB.favorit === id) ? null : id;
-  if (AB.favorit) AB.picks.add(id);
+  if (AB.favorit) {
+    AB.picks.add(id);
+    favoritFeiern(karte);
+  }
   stimmeSenden();
   kartenAktualisieren();
 }
@@ -235,12 +256,19 @@ function kartenAktualisieren() {
   for (const el of $$('.karte')) {
     const id = el.dataset.id;
     el.classList.toggle('gewaehlt', AB.picks.has(id));
+    bissAbgleichen(el, AB.picks.has(id));
+    glanzAbgleichen(el, AB.favorit === id);
     el.classList.toggle('favorit', AB.favorit === id);
     el.querySelector('[data-waehlen]').textContent = AB.picks.has(id) ? 'Ausgewählt ✓' : 'Schmeckt mir';
     const p = punkte.get(id) || 0;
     const chip = el.querySelector('[data-punkte]');
     chip.hidden = p === 0;
     chip.textContent = p === 1 ? '1 Punkt' : `${p} Punkte`;
+    if (ersterStandDa) {
+      const vorher = LETZTE_PUNKTE.get(id);
+      if (vorher !== undefined && p > vorher) plusAnzeigen(chip, p - vorher);
+      LETZTE_PUNKTE.set(id, p);
+    }
     el.hidden = AB.filter !== 'alle' && el.dataset.kueche !== AB.filter;
   }
   const n = AB.picks.size;
@@ -313,8 +341,12 @@ function vorschlaegeRendern(daten) {
     .filter(([, v]) => v && v.text)
     .sort(([, a], [, b]) => (a.zeit || 0) - (b.zeit || 0));
   $('#vorschlagLeer').hidden = eintraege.length > 0;
+  const ersteAnzeige = BEKANNTE_VORSCHLAEGE === null;
+  const bekannt = BEKANNTE_VORSCHLAEGE || new Set();
+  BEKANNTE_VORSCHLAEGE = new Set(eintraege.map(([id]) => id));
   for (const [id, v] of eintraege) {
     const li = document.createElement('li');
+    if (!ersteAnzeige && !bekannt.has(id)) li.className = 'vorschlag-neu';
     const text = String(v.text);
     if (/^https?:\/\//i.test(text)) {
       const a = document.createElement('a');
@@ -369,7 +401,6 @@ function personenSetzen(wert) {
   AB.personen = Math.min(20, Math.max(1, wert));
   localStorage.setItem('koch.personen', String(AB.personen));
   $('#personenZahl').textContent = AB.personen;
-  $$('[data-pz]').forEach((s) => { s.textContent = AB.personen; });
   for (const el of $$('.karte')) {
     if (!el.querySelector('[data-zutaten]').hidden) {
       zutatenRendern(el, REZEPTE.find((r) => r.id === el.dataset.id));
@@ -391,12 +422,11 @@ async function start() {
   const frag = document.createDocumentFragment();
   REZEPTE.forEach((r, i) => frag.appendChild(karteBauen(r, i)));
   $('#karten').appendChild(frag);
+  kartenServieren($$('.karte'));
   filterBauen();
 
   speicher = await speicherAufbauen();
   const live = speicher.modus === 'live';
-  $('#modusChip').textContent = live ? '● Live – alle sehen dasselbe' : '● Einzelmodus';
-  $('#modusChip').className = `modus ${live ? 'live' : 'lokal'}`;
   $('#hinweisLokal').hidden = live;
 
   speicher.vorschlaegeAbonnieren(vorschlaegeRendern);

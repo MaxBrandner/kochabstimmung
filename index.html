@@ -8,7 +8,8 @@
 <meta name="theme-color" content="#1b4332">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥕</text></svg>">
 <link rel="preconnect" href="https://img.chefkoch-cdn.de">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="effekte.css?v=4">
 </head>
 <body>
 
@@ -20,7 +21,6 @@
       <p class="kopf-sub"><span id="anzahlGerichte">25</span> vegane Gerichte. Kreuz an, was dir schmeckt – ein Favorit zählt doppelt.</p>
     </div>
     <div class="kopf-status">
-      <span class="modus" id="modusChip">…</span>
       <button class="btn btn-ghost" id="btnLink" type="button">Link teilen</button>
     </div>
   </div>
@@ -72,7 +72,7 @@
     </div>
     <ol class="balken" id="balken"></ol>
     <div class="gewinner" id="gewinner" hidden>
-      <h3>Vorne liegt: <span id="gewinnerName"></span><span id="nachtischZeile" hidden>, zum Nachtisch <span id="nachtischName"></span></span></h3>
+      <h3><span class="dampf-teller" aria-hidden="true"><i></i><i></i><i></i><svg viewBox="0 0 32 16"><path d="M2 3h28a14 12 0 0 1-28 0z"/></svg></span>Vorne liegt: <span id="gewinnerName"></span><span id="nachtischZeile" hidden>, zum Nachtisch <span id="nachtischName"></span></span></h3>
       <button class="btn btn-primary" id="btnEinkauf" type="button">Einkaufsliste für <span id="einkaufPersonen">5</span> Personen kopieren</button>
       <span class="kopiert" id="kopiertHinweis" hidden>kopiert ✓</span>
     </div>
@@ -105,6 +105,6 @@
   </div>
 </div>
 
-<script type="module" src="app.js?v=5"></script>
+<script type="module" src="app.js?v=13"></script>
 </body>
 </html>
