@@ -14,8 +14,10 @@ gibt es die Einkaufsliste passend auf eure Personenzahl umgerechnet.
 2. Bei jedem Gericht auf **„Schmeckt mir"** — so viele wie du magst.
 3. Bei genau einem Gericht auf den **Stern ★** — das ist dein Favorit und zählt doppelt.
 4. Unten im **Zwischenstand** sieht jeder live, was vorne liegt.
+5. Ganz unten kann jeder ein Gericht **fürs nächste Mal vorschlagen** – am besten
+   mit Chefkoch-Link. Eigene Vorschläge lassen sich wieder entfernen.
 
-Zurzeit gibt es eine feste Runde für das Kochen am 27.10.: Alle, die den Link
+Zurzeit gibt es eine feste Runde für das Kochen am 18.11.: Alle, die den Link
 öffnen, stimmen in derselben Runde ab, egal an welchem Tag.
 
 Eine eigene Runde außer der Reihe: `?raum=irgendeinname` an den Link hängen,

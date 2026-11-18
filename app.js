@@ -5,11 +5,14 @@ import { firebaseConfig } from './firebase-config.js';
 const $  = (s) => document.querySelector(s);
 const $$ = (s) => Array.from(document.querySelectorAll(s));
 
-/* Fixed round for the cooking on 27.10.: the existing votes live under this key,
-   so every visit counts towards it regardless of the day the link is opened. */
-const STANDARD_RAUM = '2026-09-12';
+/* Fixed round for the cooking on 18.11.: every visit counts towards it
+   regardless of the day the link is opened. */
+const STANDARD_RAUM = '2026-11-18';
 const params = new URLSearchParams(location.search);
-const RAUM = (params.get('raum') || STANDARD_RAUM).replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40) || STANDARD_RAUM;
+/* Suggestions for the next round live next to the rounds, under a key no round may use. */
+const VORSCHLAG_SCHLUESSEL = '_vorschlaege';
+const raumWunsch = (params.get('raum') || STANDARD_RAUM).replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40);
+const RAUM = raumWunsch && raumWunsch !== VORSCHLAG_SCHLUESSEL ? raumWunsch : STANDARD_RAUM;
 
 const AB = {
   name:   localStorage.getItem('koch.name') || '',
@@ -32,7 +35,7 @@ const istEchtKonfiguriert = !String(firebaseConfig.apiKey || '').startsWith('HIE
 async function speicherAufbauen() {
   if (istEchtKonfiguriert) {
     try {
-      const [{ initializeApp }, { getDatabase, ref, onValue, set }] = await Promise.all([
+      const [{ initializeApp }, { getDatabase, ref, onValue, set, push, remove }] = await Promise.all([
         import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js'),
         import('https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js')
       ]);
@@ -42,14 +45,23 @@ async function speicherAufbauen() {
       return {
         modus: 'live',
         abonnieren(cb) { onValue(raumRef, (snap) => cb(snap.val() || {})); },
-        schreiben(stimme) { return set(ref(db, `abstimmungen/${RAUM}/${AB.wer}`), stimme); }
+        schreiben(stimme) { return set(ref(db, `abstimmungen/${RAUM}/${AB.wer}`), stimme); },
+        vorschlaegeAbonnieren(cb) { onValue(ref(db, `abstimmungen/${VORSCHLAG_SCHLUESSEL}`), (snap) => cb(snap.val() || {})); },
+        vorschlagSenden(v) { return push(ref(db, `abstimmungen/${VORSCHLAG_SCHLUESSEL}`), v); },
+        vorschlagLoeschen(id) { return remove(ref(db, `abstimmungen/${VORSCHLAG_SCHLUESSEL}/${id}`)); }
       };
     } catch (fehler) {
       console.warn('Firebase nicht erreichbar, Einzelmodus wird verwendet:', fehler);
     }
   }
   const schluessel = `koch.lokal.${RAUM}`;
-  let horcher = null;
+  const vorschlagSchluessel = 'koch.lokal.vorschlaege';
+  const vorschlaegeLesen = () => JSON.parse(localStorage.getItem(vorschlagSchluessel) || '{}');
+  let horcher = null, vorschlagHorcher = null;
+  const vorschlaegeSchreiben = (alle) => {
+    localStorage.setItem(vorschlagSchluessel, JSON.stringify(alle));
+    if (vorschlagHorcher) vorschlagHorcher(alle);
+  };
   return {
     modus: 'lokal',
     abonnieren(cb) { horcher = cb; cb(JSON.parse(localStorage.getItem(schluessel) || '{}')); },
@@ -58,7 +70,10 @@ async function speicherAufbauen() {
       alle[AB.wer] = stimme;
       localStorage.setItem(schluessel, JSON.stringify(alle));
       if (horcher) horcher(alle);
-    }
+    },
+    vorschlaegeAbonnieren(cb) { vorschlagHorcher = cb; cb(vorschlaegeLesen()); },
+    vorschlagSenden(v) { vorschlaegeSchreiben({ ...vorschlaegeLesen(), [String(Date.now())]: v }); },
+    vorschlagLoeschen(id) { const alle = vorschlaegeLesen(); delete alle[id]; vorschlaegeSchreiben(alle); }
   };
 }
 
@@ -253,31 +268,32 @@ function ergebnisAktualisieren() {
     ? 'Noch keine Stimmen abgegeben.'
     : `${anzahl} von ${AB.personen} haben abgestimmt: ${waehler.join(', ')}`;
 
-  const gewinner = sortiert[0];
-  $('#gewinner').hidden = !gewinner;
-  if (gewinner) {
-    $('#gewinnerName').textContent = gewinner.r.titel;
-    $('#btnEinkauf').dataset.id = gewinner.r.id;
-  }
+  /* Main course and dessert are chosen separately: the leading dessert is added on top. */
+  const gewinner = sortiert.find((x) => !x.r.nachtisch);
+  const nachtisch = sortiert.find((x) => x.r.nachtisch);
+  $('#gewinner').hidden = !gewinner && !nachtisch;
+  $('#gewinnerName').textContent = gewinner ? gewinner.r.titel : 'noch kein Hauptgericht';
+  $('#nachtischZeile').hidden = !nachtisch;
+  if (nachtisch) $('#nachtischName').textContent = nachtisch.r.titel;
+  $('#btnEinkauf').dataset.ids = [gewinner, nachtisch].filter(Boolean).map((x) => x.r.id).join(',');
   $('#einkaufPersonen').textContent = AB.personen;
 }
 
 /* ===================== Einkaufsliste ===================== */
 
 function einkaufslisteKopieren() {
-  const id = $('#btnEinkauf').dataset.id;
-  const rezept = REZEPTE.find((r) => r.id === id);
-  if (!rezept) return;
-  const zeilen = zutatenFuer(rezept, AB.personen)
-    .map((z) => `- ${[z.menge, z.einheit, z.name].filter(Boolean).join(' ')}`);
-  const text = [
+  const ids = ($('#btnEinkauf').dataset.ids || '').split(',').filter(Boolean);
+  const rezepte = ids.map((id) => REZEPTE.find((r) => r.id === id)).filter(Boolean);
+  if (!rezepte.length) return;
+  const text = rezepte.map((rezept) => [
     `Einkaufsliste: ${rezept.titel}`,
     `Für ${AB.personen} Personen (Original: ${rezept.portionen})`,
     '',
-    ...zeilen,
+    ...zutatenFuer(rezept, AB.personen)
+      .map((z) => `- ${[z.menge, z.einheit, z.name].filter(Boolean).join(' ')}`),
     '',
     `Zubereitung: ${rezept.quelle}`
-  ].join('\n');
+  ].join('\n')).join('\n\n');
 
   navigator.clipboard.writeText(text).then(() => {
     const h = $('#kopiertHinweis');
@@ -286,6 +302,49 @@ function einkaufslisteKopieren() {
   }).catch(() => {
     prompt('Kopieren nicht erlaubt – hier zum Markieren:', text);
   });
+}
+
+/* ===================== Vorschläge fürs nächste Mal ===================== */
+
+function vorschlaegeRendern(daten) {
+  const liste = $('#vorschlagListe');
+  liste.innerHTML = '';
+  const eintraege = Object.entries(daten || {})
+    .filter(([, v]) => v && v.text)
+    .sort(([, a], [, b]) => (a.zeit || 0) - (b.zeit || 0));
+  $('#vorschlagLeer').hidden = eintraege.length > 0;
+  for (const [id, v] of eintraege) {
+    const li = document.createElement('li');
+    const text = String(v.text);
+    if (/^https?:\/\//i.test(text)) {
+      const a = document.createElement('a');
+      a.href = text; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = text.replace(/^https?:\/\/(www\.)?/i, '');
+      li.appendChild(a);
+    } else {
+      li.appendChild(document.createTextNode(text));
+    }
+    const wer = document.createElement('span');
+    wer.className = 'vorschlag-wer';
+    wer.textContent = ` – ${v.name || 'Jemand'}`;
+    li.appendChild(wer);
+    if (v.wer === AB.wer) {
+      const weg = document.createElement('button');
+      weg.type = 'button'; weg.className = 'btn-mini'; weg.textContent = 'entfernen';
+      weg.addEventListener('click', () => speicher.vorschlagLoeschen(id));
+      li.appendChild(weg);
+    }
+    liste.appendChild(li);
+  }
+}
+
+function vorschlagAbschicken() {
+  const feld = $('#eingabeVorschlag');
+  const text = feld.value.trim().slice(0, 300);
+  if (!text || !speicher) { feld.focus(); return; }
+  Promise.resolve(speicher.vorschlagSenden({ text, name: AB.name || 'Jemand', wer: AB.wer, zeit: Date.now() }))
+    .then(() => { feld.value = ''; })
+    .catch((fehler) => { console.warn('Vorschlag nicht gespeichert:', fehler); alert('Der Vorschlag konnte nicht gespeichert werden.'); });
 }
 
 /* ===================== Filter ===================== */
@@ -322,11 +381,12 @@ function personenSetzen(wert) {
 /* ===================== Start ===================== */
 
 async function start() {
-  $('#kopfDatum').textContent = new Date(2026, 9, 27).toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' });
+  $('#kopfDatum').textContent = new Date(2026, 10, 18).toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' });
   $('#raumAnzeige').textContent = `Runde ${RAUM}`;
 
   REZEPTE = await fetch('rezepte.json').then((r) => r.json());
   REZEPTE.forEach((r) => { r.id = String(r.id); });
+  $('#anzahlGerichte').textContent = REZEPTE.length;
 
   const frag = document.createDocumentFragment();
   REZEPTE.forEach((r, i) => frag.appendChild(karteBauen(r, i)));
@@ -338,6 +398,8 @@ async function start() {
   $('#modusChip').textContent = live ? '● Live – alle sehen dasselbe' : '● Einzelmodus';
   $('#modusChip').className = `modus ${live ? 'live' : 'lokal'}`;
   $('#hinweisLokal').hidden = live;
+
+  speicher.vorschlaegeAbonnieren(vorschlaegeRendern);
 
   speicher.abonnieren((daten) => {
     ALLE_STIMMEN = daten || {};
@@ -390,6 +452,8 @@ $('#btnNameWechseln').addEventListener('click', () => {
 $('#personenPlus').addEventListener('click', () => personenSetzen(AB.personen + 1));
 $('#personenMinus').addEventListener('click', () => personenSetzen(AB.personen - 1));
 $('#btnEinkauf').addEventListener('click', einkaufslisteKopieren);
+$('#btnVorschlag').addEventListener('click', vorschlagAbschicken);
+$('#eingabeVorschlag').addEventListener('keydown', (e) => { if (e.key === 'Enter') vorschlagAbschicken(); });
 $('#btnZuErgebnis').addEventListener('click', () => $('#ergebnisBlock').scrollIntoView({ behavior: 'smooth' }));
 $('#btnLink').addEventListener('click', () => {
   const url = `${location.origin}${location.pathname}?raum=${RAUM}`;

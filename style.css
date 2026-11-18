@@ -173,6 +173,13 @@ input[type=text]:focus{outline:2px solid var(--gruen-hell); outline-offset:1px}
 .gewinner h3{font-size:1rem; flex:1 1 100%}
 .gewinner h3 span{color:var(--terra)}
 .kopiert{color:var(--gruen-hell); font-size:.85rem; font-weight:600}
+.gewinner h3 #nachtischZeile{color:inherit}
+.gewinner h3 #nachtischName{color:var(--terra)}
+
+.vorschlag-zeile{margin-top:1rem}
+.vorschlag-liste{margin:.9rem 0 0; padding-left:1.2rem; display:grid; gap:.4rem; font-size:.92rem; overflow-wrap:anywhere}
+.vorschlag-wer{color:var(--text-leise)}
+.vorschlaege #vorschlagLeer{margin-top:.9rem}
 
 /* ---------- Fußzeile & Fußleiste ---------- */
 .fuss{margin-top:2.5rem; text-align:center; font-size:.85rem; color:var(--text-leise)}

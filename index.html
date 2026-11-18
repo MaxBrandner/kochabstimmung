@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1b4332">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥕</text></svg>">
 <link rel="preconnect" href="https://img.chefkoch-cdn.de">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <div class="kopf-text">
       <p class="kopf-datum" id="kopfDatum"></p>
       <h1>Was kochen wir heute?</h1>
-      <p class="kopf-sub">26 vegane Gerichte. Kreuz an, was dir schmeckt – ein Favorit zählt doppelt.</p>
+      <p class="kopf-sub"><span id="anzahlGerichte">25</span> vegane Gerichte. Kreuz an, was dir schmeckt – ein Favorit zählt doppelt.</p>
     </div>
     <div class="kopf-status">
       <span class="modus" id="modusChip">…</span>
@@ -72,10 +72,23 @@
     </div>
     <ol class="balken" id="balken"></ol>
     <div class="gewinner" id="gewinner" hidden>
-      <h3>Vorne liegt: <span id="gewinnerName"></span></h3>
+      <h3>Vorne liegt: <span id="gewinnerName"></span><span id="nachtischZeile" hidden>, zum Nachtisch <span id="nachtischName"></span></span></h3>
       <button class="btn btn-primary" id="btnEinkauf" type="button">Einkaufsliste für <span id="einkaufPersonen">5</span> Personen kopieren</button>
       <span class="kopiert" id="kopiertHinweis" hidden>kopiert ✓</span>
     </div>
+  </section>
+
+  <section class="ergebnis vorschlaege">
+    <div class="ergebnis-kopf">
+      <h2>Vorschlag fürs nächste Mal</h2>
+      <p class="mini">Ein Gericht, das du gern in der nächsten Runde hättest – am besten mit Chefkoch-Link.</p>
+    </div>
+    <div class="namenszeile vorschlag-zeile">
+      <input type="text" id="eingabeVorschlag" maxlength="300" placeholder="Gericht oder Link, z. B. https://www.chefkoch.de/rezepte/…" aria-label="Vorschlag">
+      <button class="btn btn-primary" id="btnVorschlag" type="button">Vorschlagen</button>
+    </div>
+    <p class="mini" id="vorschlagLeer">Noch keine Vorschläge.</p>
+    <ul class="vorschlag-liste" id="vorschlagListe"></ul>
   </section>
 
   <footer class="fuss">
@@ -92,6 +105,6 @@
   </div>
 </div>
 
-<script type="module" src="app.js?v=3"></script>
+<script type="module" src="app.js?v=5"></script>
 </body>
 </html>
