@@ -1,5 +1,450 @@
 [
   {
+    "id": "3758511572097814",
+    "titel": "Veganes Pad Thai",
+    "untertitel": "",
+    "bewertung": 4.58,
+    "stimmen": 12,
+    "portionen": 4,
+    "zeitGesamt": 60,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3758511572097814/bilder/1248270/crop-960x640/veganes-pad-thai.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3758511572097814/Veganes-Pad-Thai.html",
+    "zutaten": [
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Mie-Nudeln"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Karotte(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Paprika"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "Bund",
+        "name": "Frühlingszwiebel(n)"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "kleiner",
+        "name": "Brokkoli"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Tofu"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Cashewkerne"
+      },
+      {
+        "menge": 60.0,
+        "einheit": "g",
+        "name": "Erdnussbutter"
+      },
+      {
+        "menge": 60.0,
+        "einheit": "ml",
+        "name": "Kokosmilch"
+      },
+      {
+        "menge": 60.0,
+        "einheit": "ml",
+        "name": "Sojasauce"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Agavendicksaft"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "etwas",
+        "name": "Limettensaft"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Öl zum Braten"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Handvoll",
+        "name": "Sesam"
+      }
+    ],
+    "kueche": "Thai",
+    "neu": true
+  },
+  {
+    "id": "4265481699713233",
+    "titel": "Tofu Bibimbap",
+    "untertitel": "",
+    "bewertung": 4.33,
+    "stimmen": 3,
+    "portionen": 2,
+    "zeitGesamt": 60,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/4265481699713233/bilder/1625393/crop-960x640/tofu-bibimbap.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/4265481699713233/Tofu-Bibimbap.html",
+    "zutaten": [
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Reis"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zucchini"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Sesamöl (Rapsöl oder Reisöl)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "Zehe/n",
+        "name": "Knoblauchzehe(n) (gehackter)"
+      },
+      {
+        "menge": 150.0,
+        "einheit": "g",
+        "name": "Baby-Spinat (oder Baby-Grünkohl)"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Möhre(n)"
+      },
+      {
+        "menge": 250.0,
+        "einheit": "g",
+        "name": "Pilze (weiße Krimini-Pilze oder Shiitake)"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Tofu"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Gochujang (koreanische Chilipaste)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Apfelessig"
+      }
+    ],
+    "kueche": "Koreanisch",
+    "neu": true
+  },
+  {
+    "id": "3711081561308654",
+    "titel": "Vegane Tacos mit Walnussfüllung",
+    "untertitel": "",
+    "bewertung": 4.25,
+    "stimmen": 4,
+    "portionen": 4,
+    "zeitGesamt": 60,
+    "zeitVorbereitung": 30,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/3711081561308654/bilder/1391931/crop-960x640/vegane-tacos-mit-walnussfuellung.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/3711081561308654/Vegane-Tacos-mit-Walnussfuellung.html",
+    "zutaten": [
+      {
+        "menge": 350.0,
+        "einheit": "g",
+        "name": "Dinkelvollkornmehl"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Backpulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Salz"
+      },
+      {
+        "menge": 8.0,
+        "einheit": "EL",
+        "name": "Öl"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "ml",
+        "name": "Wasser, lauwarmes"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n) (gehackt)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n) (gehackt)"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Walnüsse, gehackte"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Kidneybohnen"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Chilischote(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Paprikapulver, geräuchertes"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Oregano"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Kreuzkümmelpulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Prise(n)",
+        "name": "Salz und Pfeffer"
+      },
+      {
+        "menge": 200.0,
+        "einheit": "g",
+        "name": "Maiskörner"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "",
+        "name": "Tomate(n) (in Scheiben geschnitten)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "EL",
+        "name": "Koriandergrün"
+      }
+    ],
+    "kueche": "Tex-Mex",
+    "neu": true
+  },
+  {
+    "id": "4109501647624889",
+    "titel": "Bunte vegane Burrito-Bowl",
+    "untertitel": "",
+    "bewertung": 5.0,
+    "stimmen": 2,
+    "portionen": 2,
+    "zeitGesamt": 40,
+    "zeitVorbereitung": 10,
+    "schwierigkeit": 1,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/4109501647624889/bilder/1449692/crop-960x640/bunte-vegane-burrito-bowl.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/4109501647624889/Bunte-vegane-Burrito-Bowl.html",
+    "zutaten": [
+      {
+        "menge": 6.0,
+        "einheit": "",
+        "name": "Kartoffel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Paprikaschote(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Zwiebel(n)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "Port.",
+        "name": "Salatmischung"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "Port.",
+        "name": "Dressing (nach Wahl)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Pck.",
+        "name": "Fleischersatz ((Filetstücke) vegan)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Pck.",
+        "name": "Reis (fertiger, für die Mikrowelle)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Bohnen (schwarze)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Öl"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "",
+        "name": "Gewürz(e) (nach Wahl, für die Kartoffeln)"
+      },
+      {
+        "menge": 0.0,
+        "einheit": "n. B.",
+        "name": "Salsa (und Guacamole)"
+      }
+    ],
+    "kueche": "Tex-Mex",
+    "neu": true
+  },
+  {
+    "id": "2985031451299097",
+    "titel": "Bohnen-Avocado-Enchiladas mit mexikanischer Mole",
+    "untertitel": "",
+    "bewertung": 4.4,
+    "stimmen": 10,
+    "portionen": 4,
+    "zeitGesamt": 120,
+    "zeitVorbereitung": 45,
+    "schwierigkeit": 2,
+    "bild": "https://img.chefkoch-cdn.de/rezepte/2985031451299097/bilder/1289506/crop-960x640/bohnen-avocado-enchiladas-mit-mexikanischer-mole.jpg",
+    "quelle": "https://www.chefkoch.de/rezepte/2985031451299097/Bohnen-Avocado-Enchiladas-mit-mexikanischer-Mole.html",
+    "zutaten": [
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Bohnen (schwarze, 400 g)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Dose",
+        "name": "Mais (400 g)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Avocado(s)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Tomate(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "",
+        "name": "Frühlingszwiebel(n)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Knoblauchpulver"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "Bund",
+        "name": "Koriandergrün"
+      },
+      {
+        "menge": 4.0,
+        "einheit": "große",
+        "name": "Tortilla(s)"
+      },
+      {
+        "menge": 800.0,
+        "einheit": "ml",
+        "name": "Gemüsebrühe"
+      },
+      {
+        "menge": 50.0,
+        "einheit": "ml",
+        "name": "Olivenöl"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "",
+        "name": "Knoblauchzehe(n) (gehackt)"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "",
+        "name": "Zwiebel(n) (gehackt)"
+      },
+      {
+        "menge": 3.0,
+        "einheit": "EL",
+        "name": "Mehl"
+      },
+      {
+        "menge": 2.0,
+        "einheit": "EL",
+        "name": "Schokoladencreme (zartbitter, vegan)"
+      },
+      {
+        "menge": 1.0,
+        "einheit": "TL",
+        "name": "Oregano"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Cayennepfeffer"
+      },
+      {
+        "menge": 0.5,
+        "einheit": "TL",
+        "name": "Zimtpulver"
+      }
+    ],
+    "kueche": "Tex-Mex",
+    "neu": true
+  },
+  {
     "id": "2714121424378503",
     "titel": "Vöner – veganer Döner",
     "untertitel": "selbst gemacht",
@@ -906,133 +1351,6 @@
     "kueche": "Burger"
   },
   {
-    "id": "2435321384026983",
-    "titel": "Vegane Spaghetti Carbonara",
-    "untertitel": "mit Zucchini-Spaghetti, low carb",
-    "bewertung": 4.55,
-    "stimmen": 38,
-    "portionen": 3,
-    "zeitGesamt": 30,
-    "zeitVorbereitung": 20,
-    "schwierigkeit": 2,
-    "bild": "https://img.chefkoch-cdn.de/rezepte/2435321384026983/bilder/721125/crop-960x640/vegane-spaghetti-carbonara.jpg",
-    "quelle": "https://www.chefkoch.de/rezepte/2435321384026983/Vegane-Spaghetti-Carbonara.html",
-    "zutaten": [
-      {
-        "menge": 80.0,
-        "einheit": "g",
-        "name": "Mandelmus"
-      },
-      {
-        "menge": 200.0,
-        "einheit": "g",
-        "name": "Räuchertofu"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "",
-        "name": "Zwiebel(n)"
-      },
-      {
-        "menge": 3.0,
-        "einheit": "Zehe/n",
-        "name": "Knoblauch"
-      },
-      {
-        "menge": 5.0,
-        "einheit": "EL",
-        "name": "Olivenöl"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "TL",
-        "name": "Zitronensaft"
-      },
-      {
-        "menge": 5.0,
-        "einheit": "m.-große",
-        "name": "Zucchini"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "Prise(n)",
-        "name": "Salz und Pfeffer"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "TL",
-        "name": "Gemüsebrühepulver"
-      },
-      {
-        "menge": 200.0,
-        "einheit": "ml",
-        "name": "Wasser"
-      }
-    ],
-    "kueche": "Italienisch"
-  },
-  {
-    "id": "3841701585254313",
-    "titel": "Vegane Bolognese aus Blumenkohl",
-    "untertitel": "einfach, lecker, nachhaltig",
-    "bewertung": 4.55,
-    "stimmen": 44,
-    "portionen": 4,
-    "zeitGesamt": 15,
-    "zeitVorbereitung": 5,
-    "schwierigkeit": 2,
-    "bild": "https://img.chefkoch-cdn.de/rezepte/3841701585254313/bilder/1548018/crop-960x640/vegane-bolognese-aus-blumenkohl.jpg",
-    "quelle": "https://www.chefkoch.de/rezepte/3841701585254313/Vegane-Bolognese-aus-Blumenkohl.html",
-    "zutaten": [
-      {
-        "menge": 1.0,
-        "einheit": "",
-        "name": "Blumenkohl"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "",
-        "name": "Zwiebel(n)"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "",
-        "name": "Knoblauchzehe(n)"
-      },
-      {
-        "menge": 40.0,
-        "einheit": "g",
-        "name": "Tomatenmark"
-      },
-      {
-        "menge": 800.0,
-        "einheit": "g",
-        "name": "Tomaten, passierte"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "TL",
-        "name": "Kräuter, italienische"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "TL",
-        "name": "Gemüsebrühepulver"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "TL",
-        "name": "Kräutersalz"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "TL",
-        "name": "Gewürzmischung"
-      }
-    ],
-    "kueche": "Italienisch"
-  },
-  {
     "id": "2470091389084050",
     "titel": "Schnelle vegane Falafel",
     "untertitel": "",
@@ -1559,178 +1877,6 @@
     "kueche": "Indisch"
   },
   {
-    "id": "2316731369346665",
-    "titel": "Grüne Bohnen mit Kartoffeln",
-    "untertitel": "veganes Pfannengericht",
-    "bewertung": 4.54,
-    "stimmen": 101,
-    "portionen": 3,
-    "zeitGesamt": 45,
-    "zeitVorbereitung": 10,
-    "schwierigkeit": 2,
-    "bild": "https://img.chefkoch-cdn.de/rezepte/2316731369346665/bilder/1210869/crop-960x640/gruene-bohnen-mit-kartoffeln.jpg",
-    "quelle": "https://www.chefkoch.de/rezepte/2316731369346665/Gruene-Bohnen-mit-Kartoffeln.html",
-    "zutaten": [
-      {
-        "menge": 500.0,
-        "einheit": "g",
-        "name": "Bohnen"
-      },
-      {
-        "menge": 5.0,
-        "einheit": "m.-große",
-        "name": "Kartoffel(n)"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "große",
-        "name": "Gemüsezwiebel(n)"
-      },
-      {
-        "menge": 3.0,
-        "einheit": "",
-        "name": "Knoblauchzehe(n)"
-      },
-      {
-        "menge": 3.0,
-        "einheit": "EL",
-        "name": "Tomatenmark"
-      },
-      {
-        "menge": 4.0,
-        "einheit": "EL",
-        "name": "Olivenöl"
-      },
-      {
-        "menge": 450.0,
-        "einheit": "ml",
-        "name": "Gemüsebrühe"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Salz und Pfeffer"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Harissa"
-      }
-    ],
-    "kueche": "Deftig"
-  },
-  {
-    "id": "2378051377072321",
-    "titel": "Vollkorn-Semmelknödel mit Champignon-Sahnesoße",
-    "untertitel": "vegan",
-    "bewertung": 4.42,
-    "stimmen": 33,
-    "portionen": 2,
-    "zeitGesamt": 55,
-    "zeitVorbereitung": 30,
-    "schwierigkeit": 1,
-    "bild": "https://img.chefkoch-cdn.de/rezepte/2378051377072321/bilder/956750/crop-960x640/vollkorn-semmelknoedel-mit-champignon-sahnesosse.jpg",
-    "quelle": "https://www.chefkoch.de/rezepte/2378051377072321/Vollkorn-Semmelknoedel-mit-Champignon-Sahnesosse.html",
-    "zutaten": [
-      {
-        "menge": 300.0,
-        "einheit": "g",
-        "name": "Vollkornbrötchen"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "EL",
-        "name": "Margarine"
-      },
-      {
-        "menge": 3.0,
-        "einheit": "EL",
-        "name": "Sojamehl"
-      },
-      {
-        "menge": 250.0,
-        "einheit": "ml",
-        "name": "Sojamilch (Sojadrink)"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "",
-        "name": "Zwiebel(n)"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "TL",
-        "name": "Meersalz"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "Handvoll",
-        "name": "Petersilie"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Muskatnuss, frisch geriebene"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Pfeffer"
-      },
-      {
-        "menge": 7.0,
-        "einheit": "m.-große",
-        "name": "Champignons, braune"
-      },
-      {
-        "menge": 0.5,
-        "einheit": "Becher",
-        "name": "Sojasahne (Sojacreme Cuisine)"
-      },
-      {
-        "menge": 0.5,
-        "einheit": "Tasse",
-        "name": "Wasser"
-      },
-      {
-        "menge": 0.5,
-        "einheit": "Würfel",
-        "name": "Gemüsebrühe"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "",
-        "name": "Zwiebel(n)"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "EL",
-        "name": "Margarine"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "Handvoll",
-        "name": "Petersilie"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Muskatnuss, frisch geriebene"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Pfeffer"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "evtl.",
-        "name": "Saucenbinder"
-      }
-    ],
-    "kueche": "Deftig"
-  },
-  {
     "id": "3267061485606231",
     "titel": "One-Pot-Pasta Napoli",
     "untertitel": "lecker und einfach",
@@ -1790,102 +1936,6 @@
       }
     ],
     "kueche": "Italienisch"
-  },
-  {
-    "id": "3400261506352305",
-    "titel": "Veganer Kartoffel-Blumenkohl-Auflauf mit Hackfleisch-Ersatz",
-    "untertitel": "mit selbstgemachtem Käseschmelz",
-    "bewertung": 4.51,
-    "stimmen": 39,
-    "portionen": 3,
-    "zeitGesamt": 60,
-    "zeitVorbereitung": 20,
-    "schwierigkeit": 1,
-    "bild": "https://img.chefkoch-cdn.de/rezepte/3400261506352305/bilder/1055195/crop-960x640/veganer-kartoffel-blumenkohl-auflauf-mit-hackfleisch-ersatz.jpg",
-    "quelle": "https://www.chefkoch.de/rezepte/3400261506352305/Veganer-Kartoffel-Blumenkohl-Auflauf-mit-Hackfleisch-Ersatz.html",
-    "zutaten": [
-      {
-        "menge": 5.0,
-        "einheit": "m.-große",
-        "name": "Kartoffel(n)"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "",
-        "name": "Blumenkohl"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "",
-        "name": "Zwiebel(n)"
-      },
-      {
-        "menge": 200.0,
-        "einheit": "g",
-        "name": "Räuchertofu"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "EL",
-        "name": "Sojasauce"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "EL",
-        "name": "Ahornsirup"
-      },
-      {
-        "menge": 0.5,
-        "einheit": "TL",
-        "name": "Flüssigrauch"
-      },
-      {
-        "menge": 0.5,
-        "einheit": "TL",
-        "name": "Knoblauchpulver"
-      },
-      {
-        "menge": 0.5,
-        "einheit": "TL",
-        "name": "Pfeffer"
-      },
-      {
-        "menge": 150.0,
-        "einheit": "ml",
-        "name": "Gemüsebrühe"
-      },
-      {
-        "menge": 150.0,
-        "einheit": "ml",
-        "name": "Sojamilch (Sojadrink)"
-      },
-      {
-        "menge": 6.0,
-        "einheit": "EL",
-        "name": "Mehl"
-      },
-      {
-        "menge": 4.0,
-        "einheit": "EL",
-        "name": "Margarine"
-      },
-      {
-        "menge": 8.0,
-        "einheit": "EL",
-        "name": "Hefeflocken"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "TL",
-        "name": "Senf"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Salz und Pfeffer"
-      }
-    ],
-    "kueche": "Auflauf"
   },
   {
     "id": "3471871517214897",
@@ -2028,107 +2078,6 @@
       }
     ],
     "kueche": "Italienisch"
-  },
-  {
-    "id": "852081190699690",
-    "titel": "Veganer Gemüse-Tofu-Auflauf",
-    "untertitel": "würzig-deftig, auch geeignet für Rohgemüse-Resteverwertung",
-    "bewertung": 4.47,
-    "stimmen": 47,
-    "portionen": 1,
-    "zeitGesamt": 90,
-    "zeitVorbereitung": 30,
-    "schwierigkeit": 2,
-    "bild": "https://img.chefkoch-cdn.de/rezepte/852081190699690/bilder/1124622/crop-960x640/veganer-gemuese-tofu-auflauf.jpg",
-    "quelle": "https://www.chefkoch.de/rezepte/852081190699690/Veganer-Gemuese-Tofu-Auflauf.html",
-    "zutaten": [
-      {
-        "menge": 1.0,
-        "einheit": "EL",
-        "name": "Kokosfett"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "kleine",
-        "name": "Zwiebel(n)"
-      },
-      {
-        "menge": 2.0,
-        "einheit": "große",
-        "name": "Kartoffel(n)"
-      },
-      {
-        "menge": 300.0,
-        "einheit": "g",
-        "name": "Brokkoli"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "große",
-        "name": "Fleischtomate(n)"
-      },
-      {
-        "menge": 250.0,
-        "einheit": "ml",
-        "name": "Sojamilch (Sojadrink)"
-      },
-      {
-        "menge": 20.0,
-        "einheit": "g",
-        "name": "Weizenmehl Type 550"
-      },
-      {
-        "menge": 30.0,
-        "einheit": "g",
-        "name": "Margarine"
-      },
-      {
-        "menge": 1.0,
-        "einheit": "TL",
-        "name": "Senf, mittelscharfer"
-      },
-      {
-        "menge": 50.0,
-        "einheit": "g",
-        "name": "Räuchertofu"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Sojasauce"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "etwas",
-        "name": "Muskatblüte"
-      },
-      {
-        "menge": 30.0,
-        "einheit": "g",
-        "name": "Hefeflocken"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Salz und Pfeffer, weißer"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "",
-        "name": "Currypulver"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "evtl.",
-        "name": "Chilisauce"
-      },
-      {
-        "menge": 0.0,
-        "einheit": "n. B.",
-        "name": "Pflanzenfett"
-      }
-    ],
-    "kueche": "Auflauf"
   },
   {
     "id": "938121199463539",
